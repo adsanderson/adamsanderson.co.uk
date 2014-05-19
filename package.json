@@ -1,10 +1,13 @@
 {
   "name": "hexo-site",
-  "version": "2.5.7",
+  "version": "2.6.0",
   "private": true,
   "dependencies": {
     "hexo-generator-feed": "^0.1.1",
     "lodash": "^2.4.1",
-    "marked": "^0.3.2"
+    "marked": "^0.3.2",
+    "hexo-renderer-ejs": "*",
+    "hexo-renderer-stylus": "*",
+    "hexo-renderer-marked": "*"
   }
 }
