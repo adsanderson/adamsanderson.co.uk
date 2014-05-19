@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A developer's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://adamsanderson.co.uk/"/>
-  <updated>2014-05-12T10:14:31.880Z</updated>
+  <updated>2014-05-19T19:11:29.135Z</updated>
   <id>http://adamsanderson.co.uk/</id>
   
   <author>
@@ -16,9 +16,9 @@
   
   <entry>
     <title><![CDATA[From Bootstrap: How to make a point with CSS]]></title>
-    <link href="http://adamsanderson.co.uk/2014/05/10/From_Bootstrap_How_to_make_a_point_with_CSS/"/>
-    <id>http://adamsanderson.co.uk/2014/05/10/From_Bootstrap_How_to_make_a_point_with_CSS/</id>
-    <published>2014-05-10T22:21:52.000Z</published>
+    <link href="http://adamsanderson.co.uk/2014/05/19/From_Bootstrap_How_to_make_a_point_with_CSS/"/>
+    <id>http://adamsanderson.co.uk/2014/05/19/From_Bootstrap_How_to_make_a_point_with_CSS/</id>
+    <published>2014-05-19T12:04:41.000Z</published>
     <updated>2014-05-10T22:37:56.000Z</updated>
     <content type="html"><![CDATA[<p>Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to get there. In Bootstrap the point is created using a pseudo element and also takes advantage of <code>background-clip</code>, but I&#39;ll be keeping things simple here.</p>
 <p>1) Start with an element (div) and add a border</p>
