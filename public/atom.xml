@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Adam Sanderson]]></title>
+  <subtitle><![CDATA[A developer's blog]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://adamsanderson.co.uk/"/>
+  <updated>2014-05-12T10:14:31.880Z</updated>
+  <id>http://adamsanderson.co.uk/</id>
+  
+  <author>
+    <name><![CDATA[Adam Sanderson]]></name>
+    <email><![CDATA[adam@adamsanderson.co.uk]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[From Bootstrap: How to make a point with CSS]]></title>
+    <link href="http://adamsanderson.co.uk/2014/05/10/From_Bootstrap_How_to_make_a_point_with_CSS/"/>
+    <id>http://adamsanderson.co.uk/2014/05/10/From_Bootstrap_How_to_make_a_point_with_CSS/</id>
+    <published>2014-05-10T22:21:52.000Z</published>
+    <updated>2014-05-10T22:37:56.000Z</updated>
+    <content type="html"><![CDATA[<p>Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to get there. In Bootstrap the point is created using a pseudo element and also takes advantage of <code>background-clip</code>, but I&#39;ll be keeping things simple here.</p>
+<p>1) Start with an element (div) and add a border</p>
+<p>2) Each side of the border is connected at either end by a mitre joint. This is what is taken advantage of To create the pointer look.</p>
+<p>3) The height and width of an element is the internal size of that element, the border is calculated on top of that. So the border will still be drawn even when the height and width are both set to 0. I&#39;ve also increased the size of the border here.</p>
+<p>4) Final step is to make 3 of the sides transparent and the <code>background-color</code> transparent. This leaves you with a pointer.</p>
+<p>You don&#39;t have to have an equilateral triangle, by changing the widths of the 2 adjacent sides you can create a variety of triangular shapes. The demos all have a <code>border-top-width</code> of 20px.</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/6gy3F/embedded/result,html,css/light" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+    
+    
+      <category term="CSS" scheme="http://adamsanderson.co.uk/tags/CSS/"/>
+    
+      <category term="Bootstrap" scheme="http://adamsanderson.co.uk/tags/Bootstrap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Kevin Marks and the Indie web]]></title>
+    <link href="http://adamsanderson.co.uk/2014/05/10/indie%20web/"/>
+    <id>http://adamsanderson.co.uk/2014/05/10/indie web/</id>
+    <published>2014-05-10T21:24:50.000Z</published>
+    <updated>2014-05-10T22:38:51.000Z</updated>
+    <content type="html"><![CDATA[<p>First up here is Kevin Marks&#39; talk on &quot;the web we found&quot;; the web 10 years ago, the web today and the future of the web at LeWeb&#39;13.</p>
+<iframe width="640" height="360" src="//www.youtube.com/embed/Ve48PjgDAn0" frameborder="0" allowfullscreen></iframe>
+
+<p>The talk starts by looking at the web in 2003 and a compares it to the web in 2013. This was just the background and foundation to lay out the ideas of the indie web and the future of the web.</p>
+<h3 id="the-bit-i-found-really-relevant">The bit I found really relevant</h3><p>When Marks was discussing the future of the web one of the points that resonated with me was about building tools that you want to use. I think this idea will colour most of the decisions about how this blog engine is developed (for now). It&#39;s easy to go down a rabbit hole of second guessing what other people want in a tool. But while it&#39;s just me, I&#39;ll stick to a few rules of thumb:</p>
+<ul>
+<li>In the core development, I&#39;m not going to worry too much about breaking what I already have.</li>
+<li>With one big caveat, when I update the the distribution version of the engine that is powering this blog I&#39;m not going to overwrite any theming or content I already have here.</li>
+<li>Going from writing a new post to publishing, I want that to take minimal steps. Ideally one but I&#39;ve not decided on grunt powered commits.</li>
+</ul>
+<h3 id="bonus-feature">Bonus Feature</h3><p>Here is a follow-up interview with Kevin Marks where he discuss and expands on some of the ideas from his presentation and gives a bit of background on the history of video and the web.</p>
+<iframe width="640" height="360" src="//www.youtube.com/embed/T1kfKV4Yjhs" frameborder="0" allowfullscreen></iframe>]]></content>
+    
+    
+      <category term="development" scheme="http://adamsanderson.co.uk/tags/development/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives: 2014 | Adam Sanderson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="website" property="og:type">
+<meta content="Adam Sanderson" property="og:title">
+<meta content="http://adamsanderson.co.uk/archives/2014/" property="og:url">
+<meta property="og:image">
+<meta content="Adam Sanderson" property="og:site_name">
+<meta property="og:description">
+<meta content="summary" name="twitter:card">
+  
+    <link rel="alternative" href="/atom.xml" title="Adam Sanderson" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Adam Sanderson</a>
+    <div class="collapse navbar-collapse nav-menu">
+      <ul class="nav navbar-nav">
+      
+        <li>
+          <a href="/archives">
+            <i class="fa fa-archive"></i>
+            Archives
+          </a>
+        </li>
+      
+        <li>
+          <a href="/tags">
+            <i class="fa fa-tags"></i>
+            Tags
+          </a>
+        </li>
+      
+        <li>
+          <a href="/about-me">
+            <i class="fa fa-user"></i>
+            About
+          </a>
+        </li>
+      
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a id="rss-link" href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="clearfix"></div>
+
+      <div id='content' class="container">
+
+        <div class="page-header-wrapper">
+          <!--[if lt IE 9]><div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>提示:</strong>您的浏览器版本太低了,建议升级到 <strong><a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="IE9">IE9</a></strong> 以上,本站使用<a href="https://www.google.com/intl/zh-CN/chrome/">Chrome浏览器</a>可以获得最好的显示效果.</div><![endif]-->
+          <div class="page-header">
+            <h1 class="title">
+          
+            
+              Archives
+            
+          
+            </h1>
+        </div>
+      </div>
+      
+      <section id="main"
+        
+      >
+
+  
+
+
+
+  
+    <article id="post-625acrdxyaajbvf4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2014/05/10/From_Bootstrap_How_to_make_a_point_with_CSS/">From Bootstrap: How to make a point with CSS</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2014-05-10T22:21:52.000Z" itemprop="datePublished">May 10 2014</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to get there. In Bootstrap the point is created using a pseudo element and also takes advantage of <code>background-clip</code>, but I&#39;ll be keeping things simple here.</p>
+<p>1) Start with an element (div) and add a border</p>
+<p>2) Each side of the border is connected at either end by a mitre joint. This is what is taken advantage of To create the pointer look.</p>
+<p>3) The height and width of an element is the internal size of that element, the border is calculated on top of that. So the border will still be drawn even when the height and width are both set to 0. I&#39;ve also increased the size of the border here.</p>
+<p>4) Final step is to make 3 of the sides transparent and the <code>background-color</code> transparent. This leaves you with a pointer.</p>
+<p>You don&#39;t have to have an equilateral triangle, by changing the widths of the 2 adjacent sides you can create a variety of triangular shapes. The demos all have a <code>border-top-width</code> of 20px.</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/6gy3F/embedded/result,html,css/light" frameborder="0" allowfullscreen></iframe>
+
+
+        
+        <footer class="article-footer">
+          <a data-url="http://adamsanderson.co.uk/2014/05/10/From_Bootstrap_How_to_make_a_point_with_CSS/" data-id="625acrdxyaajbvf4" data_title="From Bootstrap: How to make a point with CSS"
+          data_summary="Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to..." class="article-share-link">Share</a>
+          
+          
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/Bootstrap/">Bootstrap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/CSS/">CSS</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
+    <article id="post-vpyeklvetm6raybr" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2014/05/10/indie web/">Kevin Marks and the Indie web</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2014-05-10T21:24:50.000Z" itemprop="datePublished">May 10 2014</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>First up here is Kevin Marks&#39; talk on &quot;the web we found&quot;; the web 10 years ago, the web today and the future of the web at LeWeb&#39;13.</p>
+<iframe width="640" height="360" src="//www.youtube.com/embed/Ve48PjgDAn0" frameborder="0" allowfullscreen></iframe>
+
+<p>The talk starts by looking at the web in 2003 and a compares it to the web in 2013. This was just the background and foundation to lay out the ideas of the indie web and the future of the web.</p>
+<h3 id="the-bit-i-found-really-relevant">The bit I found really relevant</h3><p>When Marks was discussing the future of the web one of the points that resonated with me was about building tools that you want to use. I think this idea will colour most of the decisions about how this blog engine is developed (for now). It&#39;s easy to go down a rabbit hole of second guessing what other people want in a tool. But while it&#39;s just me, I&#39;ll stick to a few rules of thumb:</p>
+<ul>
+<li>In the core development, I&#39;m not going to worry too much about breaking what I already have.</li>
+<li>With one big caveat, when I update the the distribution version of the engine that is powering this blog I&#39;m not going to overwrite any theming or content I already have here.</li>
+<li>Going from writing a new post to publishing, I want that to take minimal steps. Ideally one but I&#39;ve not decided on grunt powered commits.</li>
+</ul>
+<h3 id="bonus-feature">Bonus Feature</h3><p>Here is a follow-up interview with Kevin Marks where he discuss and expands on some of the ideas from his presentation and gives a bit of background on the history of video and the web.</p>
+<iframe width="640" height="360" src="//www.youtube.com/embed/T1kfKV4Yjhs" frameborder="0" allowfullscreen></iframe>
+        
+        <footer class="article-footer">
+          <a data-url="http://adamsanderson.co.uk/2014/05/10/indie web/" data-id="vpyeklvetm6raybr" data_title="Kevin Marks and the Indie web"
+          data_summary="First up here is Kevin Marks&#39; talk on &quot;the web we found&quot;; the web 10 years ago, the web today and the future of the web at LeWeb&#39;13.
+
+
+The tal..." class="article-share-link">Share</a>
+          
+          
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/development/">development</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
+  
+
+
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+    
+<aside id="sidebar" class="outer">
+  
+    
+      <div class="widget-wrap">
+    <div id="search-form-wrap">
+      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://adamsanderson.co.uk"></form>
+    </div>
+</div>
+
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li class="recent-list">
+            <a href="/2014/05/10/From_Bootstrap_How_to_make_a_point_with_CSS/">From Bootstrap: How to make a point with CSS</a>
+          </li>
+        
+          <li class="recent-list">
+            <a href="/2014/05/10/indie web/">Kevin Marks and the Indie web</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+         <li class="blogroll">
+           
+             <i class="fa fa-github"></i>
+           
+           <a href="https://github.com/" title="Github">Github</a>
+          </li>
+        
+         <li class="blogroll">
+           
+             <i class="fa fa-google-plus"></i>
+           
+           <a href="https://plus.google.com/" title="Google+">Google+</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+  
+</aside>
+
+
+  
+  <div class="outer container">
+    <div id="footer-info" class="inner">
+      <a href="/">Adam Sanderson</a> &copy; 2014 Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and Theme based on <a href="https://github.com/seff/nut" target="_blank">Nut</a>
+    </div>
+  </div>
+</footer>
+<a id="gotop" href="#">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="[object Object]" class="mobile-nav-link">0</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">1</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">2</a>
+  
+</nav>
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
