@@ -30,10 +30,8 @@
           <%- partial('post/category') %>
           <%- partial('post/tag') %>
         </footer>
-      <% } else if (is_wiki()){ %>
-        <%- post.content %>
       <% } else { %>
-        <%- post_toc(post.content) %>
+        <%- post.content %>
       <% } %>
     </div>
   </div>
