@@ -41,9 +41,28 @@ body
 
 .page-header-wrapper
   font-size: logo-size;
-  background-image: url("images/bg.jpg");
-  background-position: center bottom;
-  padding-top: 500px;
+  background-image: url("images/bg-xs.jpg");
+  background-position: left bottom;
+  padding-top: 416px;
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+  .page-header-wrapper
+    background-image: url("images/bg-sm.jpg");
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+  .page-header-wrapper
+    background-image: url("images/bg-md.jpg");
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+  .page-header-wrapper
+    background-image: url("images/bg-lg.jpg");
+
 
 .page-header
   padding-left: 40px
