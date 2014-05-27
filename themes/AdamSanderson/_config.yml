@@ -1,14 +1,14 @@
 # Header
 menu:
+- name: About
+  path: /about-me
+  logo: user
 - name: Archives
   path: /archives
   logo: archive
 - name: Tags
   path: /tags
   logo: tags
-- name: About
-  path: /about-me
-  logo: user
 rss: /atom.xml
 
 # Content
@@ -25,10 +25,8 @@ wiki_info:
 # Sidebar
 sidebar: bottom
 home_widgets:
-- search
-- category
 - tag
-- archive
+- search
 - blogroll
 act_widgets:
 - search
@@ -47,11 +45,11 @@ google_plus:
 
 links:
 - name: Github
-  url: https://github.com/
+  url: https://github.com/adsanderson/
   logo: github
-- name: Google+
-  url: https://plus.google.com/
-  logo: google-plus
+# - name: Google+
+#   url: https://plus.google.com/
+#   logo: google-plus
 
 feed:
   type: atom
