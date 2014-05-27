@@ -30,7 +30,7 @@
 <body>
   <div id="container">
     <div id="wrap">
-      <nav id="main-nav" class="navbar" role="navigation">
+      <nav id="main-nav" class="navbar navbar-default" role="navigation">
   <div class="container">
     <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -43,6 +43,13 @@
       <ul class="nav navbar-nav">
       
         <li>
+          <a href="/about-me">
+            <i class="fa fa-user"></i>
+            About
+          </a>
+        </li>
+      
+        <li>
           <a href="/archives">
             <i class="fa fa-archive"></i>
             Archives
@@ -53,13 +60,6 @@
           <a href="/tags">
             <i class="fa fa-tags"></i>
             Tags
-          </a>
-        </li>
-      
-        <li>
-          <a href="/about-me">
-            <i class="fa fa-user"></i>
-            About
           </a>
         </li>
       
@@ -98,7 +98,7 @@
 
 
   
-    <article id="post-coeist6unvf5bm6u" class="article article-type-post row" itemscope itemprop="blogPost">
+    <article id="post-bv4fpjceyatcbtj7" class="article article-type-post row" itemscope itemprop="blogPost">
   <div class="article-inner col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
     
 
@@ -122,18 +122,18 @@
       
         
           <p>Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to get there. In Bootstrap the point is created using a pseudo element and also takes advantage of <code>background-clip</code>, but I&#39;ll be keeping things simple here.</p>
-<p>1) Start with an element (div) and add a border</p>
-<p>2) Each side of the border is connected at either end by a mitre joint. This is what is taken advantage of To create the pointer look.</p>
-<p>3) The height and width of an element is the internal size of that element, the border is calculated on top of that. So the border will still be drawn even when the height and width are both set to 0. I&#39;ve also increased the size of the border here.</p>
-<p>4) Final step is to make 3 of the sides transparent and the <code>background-color</code> transparent. This leaves you with a pointer.</p>
+<ol>
+<li>Start with an element (div) and add a border</li>
+<li>Each side of the border is connected at either end by a mitre joint. This is what is taken advantage of To create the pointer look.</li>
+<li>The height and width of an element is the internal size of that element, the border is calculated on top of that. So the border will still be drawn even when the height and width are both set to 0. I&#39;ve also increased the size of the border here.</li>
+<li>Final step is to make 3 of the sides transparent and the <code>background-color</code> transparent. This leaves you with a pointer.</li>
+</ol>
 <p>You don&#39;t have to have an equilateral triangle, by changing the widths of the 2 adjacent sides you can create a variety of triangular shapes. The demos all have a <code>border-top-width</code> of 20px.</p>
 <iframe width="100%" height="300" src="http://jsfiddle.net/6gy3F/embedded/result,html,css/light" frameborder="0" allowfullscreen></iframe>
 
 
         
         <footer class="article-footer">
-          <a data-url="http://adamsanderson.co.uk/2014/05/19/From_Bootstrap_How_to_make_a_point_with_CSS/" data-id="coeist6unvf5bm6u" data_title="From Bootstrap: How to make a point with CSS"
-          data_summary="Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to..." class="article-share-link">Share</a>
           
           
 
@@ -149,7 +149,7 @@
 
 
   
-    <article id="post-i2bsq89qg3ihls6g" class="article article-type-post row" itemscope itemprop="blogPost">
+    <article id="post-cwp1q1rwvtxcxmkm" class="article article-type-post row" itemscope itemprop="blogPost">
   <div class="article-inner col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
     
 
@@ -186,11 +186,6 @@
 <iframe width="640" height="360" src="//www.youtube.com/embed/T1kfKV4Yjhs" frameborder="0" allowfullscreen></iframe>
         
         <footer class="article-footer">
-          <a data-url="http://adamsanderson.co.uk/2014/05/10/indie web/" data-id="i2bsq89qg3ihls6g" data_title="Kevin Marks and the Indie web"
-          data_summary="First up here is Kevin Marks&#39; talk on &quot;the web we found&quot;; the web 10 years ago, the web today and the future of the web at LeWeb&#39;13.
-
-
-The tal..." class="article-share-link">Share</a>
           
           
 
@@ -272,14 +267,7 @@ The tal..." class="article-share-link">Share</a>
            
              <i class="fa fa-github"></i>
            
-           <a href="https://github.com/" title="Github">Github</a>
-          </li>
-        
-         <li class="blogroll">
-           
-             <i class="fa fa-google-plus"></i>
-           
-           <a href="https://plus.google.com/" title="Google+">Google+</a>
+           <a href="https://github.com/adsanderson/" title="Github">Github</a>
           </li>
         
       </ul>
@@ -305,16 +293,6 @@ The tal..." class="article-share-link">Share</a>
 </a>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="[object Object]" class="mobile-nav-link">0</a>
-  
-    <a href="[object Object]" class="mobile-nav-link">1</a>
-  
-    <a href="[object Object]" class="mobile-nav-link">2</a>
-  
-</nav>
-
     
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>

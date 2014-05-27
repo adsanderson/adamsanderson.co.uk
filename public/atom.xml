@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A developer's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://adamsanderson.co.uk/"/>
-  <updated>2014-05-19T19:11:29.135Z</updated>
+  <updated>2014-05-27T21:03:15.524Z</updated>
   <id>http://adamsanderson.co.uk/</id>
   
   <author>
@@ -19,12 +19,14 @@
     <link href="http://adamsanderson.co.uk/2014/05/19/From_Bootstrap_How_to_make_a_point_with_CSS/"/>
     <id>http://adamsanderson.co.uk/2014/05/19/From_Bootstrap_How_to_make_a_point_with_CSS/</id>
     <published>2014-05-19T12:04:41.000Z</published>
-    <updated>2014-05-10T22:37:56.000Z</updated>
+    <updated>2014-05-27T19:58:16.000Z</updated>
     <content type="html"><![CDATA[<p>Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to get there. In Bootstrap the point is created using a pseudo element and also takes advantage of <code>background-clip</code>, but I&#39;ll be keeping things simple here.</p>
-<p>1) Start with an element (div) and add a border</p>
-<p>2) Each side of the border is connected at either end by a mitre joint. This is what is taken advantage of To create the pointer look.</p>
-<p>3) The height and width of an element is the internal size of that element, the border is calculated on top of that. So the border will still be drawn even when the height and width are both set to 0. I&#39;ve also increased the size of the border here.</p>
-<p>4) Final step is to make 3 of the sides transparent and the <code>background-color</code> transparent. This leaves you with a pointer.</p>
+<ol>
+<li>Start with an element (div) and add a border</li>
+<li>Each side of the border is connected at either end by a mitre joint. This is what is taken advantage of To create the pointer look.</li>
+<li>The height and width of an element is the internal size of that element, the border is calculated on top of that. So the border will still be drawn even when the height and width are both set to 0. I&#39;ve also increased the size of the border here.</li>
+<li>Final step is to make 3 of the sides transparent and the <code>background-color</code> transparent. This leaves you with a pointer.</li>
+</ol>
 <p>You don&#39;t have to have an equilateral triangle, by changing the widths of the 2 adjacent sides you can create a variety of triangular shapes. The demos all have a <code>border-top-width</code> of 20px.</p>
 <iframe width="100%" height="300" src="http://jsfiddle.net/6gy3F/embedded/result,html,css/light" frameborder="0" allowfullscreen></iframe>
 
