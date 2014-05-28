@@ -137,16 +137,36 @@ body {
 }
 .page-header-wrapper {
   font-size: 40px;
-  background-image: url("images/bg.jpg");
+  background-image: url("images/bg-xs.jpg");
   background-position: left bottom;
-  padding-top: 500px;
+  padding-top: 416px;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .page-header-wrapper {
+    background-image: url("images/bg-sm.jpg");
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .page-header-wrapper {
+    background-image: url("images/bg-md.jpg");
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .page-header-wrapper {
+    background-image: url("images/bg-lg.jpg");
+  }
 }
 .page-header {
   padding-left: 40px;
 }
 .title {
   color: #a94442;
-  font-weight: bold;
+  border-bottom: 1px solid #a94442;
 }
 .inner {
   display: inline;
@@ -320,9 +340,6 @@ body {
     content: "Feed";
   }
 }
-.navbar-brand {
-  font-weight: bold;
-}
 #main h1,
 #main h2,
 #main h3,
@@ -391,17 +408,15 @@ body {
   color: #555 !important;
 }
 .article-category-link {
-  color: #258fb8 !important;
+  color: #a94442 !important;
   margin: 0 4px;
 }
 .article-category-link:hover {
   text-decoration: underline !important;
 }
 .article-header {
-  padding: 10px 10px;
-  background: #f5f5f5;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
 }
 .article-header h1 {
   display: inline-block;
@@ -414,7 +429,6 @@ body {
 .article-title {
   text-decoration: none;
   font-size: 1.6em;
-  font-weight: bold;
   color: #555;
   line-height: 1.1em;
   -webkit-transition: color 0.2s;
@@ -424,11 +438,9 @@ body {
   transition: color 0.2s;
 }
 a.article-title:hover {
-  color: #258fb8;
+  color: #a94442;
 }
 #toc {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
   float: right;
   font-size: 10pt;
   width: 250px;
@@ -483,19 +495,11 @@ a.article-title:hover {
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
-  font-weight: bold;
-}
-.article-entry h1,
-.article-entry h2,
-.article-entry h3,
-.article-entry h4,
-.article-entry h5,
-.article-entry h6 {
   line-height: 1.1em;
   margin: 1.1em 0;
 }
 .article-entry a {
-  color: #258fb8;
+  color: #a94442;
   text-decoration: none;
 }
 .article-entry a:hover {
@@ -581,18 +585,18 @@ a.article-title:hover {
   padding: 6px 15px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  border: 2px solid #258fb8;
+  border: 2px solid #a94442;
   background: #fff;
-  color: #258fb8;
+  color: #a94442;
   text-shadow: 0 1px #fff;
   text-decoration: none;
   float: right;
 }
 .article-more-link a:hover {
-  background: #258fb8;
+  background: #a94442;
   color: #fff;
   text-decoration: none;
-  text-shadow: 0 1px #1e7293;
+  text-shadow: 0 1px #873635;
 }
 .post-image {
   padding: 8px;
@@ -603,6 +607,7 @@ a.article-title:hover {
   line-height: 1.6em;
   border-top: 1px solid #ddd;
   padding-top: 1.6em;
+  padding-bottom: 1.6em;
   margin-top: 4rem;
 }
 .article-footer:before,
@@ -810,7 +815,7 @@ a.article-title:hover {
   margin: 50px 0;
 }
 #comments a {
-  color: #258fb8;
+  color: #a94442;
 }
 .archive-article {
   -webkit-column-break-inside: avoid;
@@ -827,12 +832,11 @@ a.article-title:hover {
 }
 .archive-article-title {
   text-decoration: none;
-  font-weight: bold;
-  color: #258fb8;
+  color: #a94442;
   line-height: 1.6em;
 }
 .archive-article-title:hover {
-  color: #258fb8;
+  color: #a94442;
 }
 .archive-article-footer {
   margin-top: 1em;
@@ -858,7 +862,6 @@ a.article-title:hover {
   color: #999;
 }
 #footer a {
-  color: #258fb8;
   text-decoration: none;
 }
 #footer a:hover {
@@ -997,7 +1000,7 @@ a.article-title:hover {
   margin-left: 10px;
 }
 .article-entry .gist .gist-file .gist-meta a {
-  color: #258fb8;
+  color: #a94442;
   font-weight: normal;
 }
 .article-entry .gist .gist-file .gist-meta a:hover {
@@ -1208,9 +1211,8 @@ pre .javascript .function {
 .category-list-link {
   background: #f5f5f5;
   padding: 0px 4px 4px;
-  margin-right: 12px;
   display: inline-block;
-  margin: 6px 6px 6px 0px;
+  margin: 0 6px 12px 0;
   line-height: 16px;
   font-size: 14px;
 }
@@ -1218,7 +1220,7 @@ pre .javascript .function {
 .tag-link:hover,
 .tag-list-link:hover,
 .category-list-link:hover {
-  background: #258fb8;
+  background: #a94442;
   text-decoration: none !important;
   color: #fff;
 }
@@ -1315,4 +1317,7 @@ pre .javascript .function {
   padding-bottom: 10px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+}
+.navbar-nav i {
+  color: #a94442;
 }
