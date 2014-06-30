@@ -125,7 +125,7 @@ body,
 }
 body {
   background: #fff;
-  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1.2em 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
@@ -136,9 +136,10 @@ body {
   margin-bottom: 40px;
 }
 .page-header-wrapper {
-  font-size: 40px;
+  font-size: 3em;
   background-image: url("images/bg-xs.jpg");
   background-position: left bottom;
+  background-repeat: no-repeat;
   padding-top: 416px;
 }
 /* Extra small devices (phones, less than 768px) */
@@ -303,7 +304,7 @@ body {
 .article-entry dl,
 .widget dl {
   margin: 0 20px;
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 .article-entry ul ul,
 .widget ul ul,
@@ -377,7 +378,7 @@ body {
 }
 .note .note-marker {
   padding-right: 6px;
-  font-size: 16px !important;
+  font-size: 1.2em !important;
 }
 .thumbnail {
   float: right;
@@ -450,7 +451,7 @@ a.article-title:hover {
   margin: 0px 0px 10px 15px;
 }
 .toc-header {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   color: #555;
 }
@@ -464,7 +465,7 @@ a.article-title:hover {
   margin-left: 0.6rem !important;
 }
 .article-toc-item {
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 .alert > i {
   margin-right: 6px;
@@ -486,8 +487,8 @@ a.article-title:hover {
 }
 .article-entry p,
 .article-entry table {
-  line-height: 1.6em;
-  margin: 1.6em 0;
+  line-height: 1.8em;
+  margin: 1.8em 0;
 }
 .article-entry h1,
 .article-entry h2,
@@ -531,12 +532,12 @@ a.article-title:hover {
 }
 .article-entry blockquote {
   font-family: Georgia, "Times New Roman", serif;
-  margin: 1.6em 20px;
+  margin: 1.8em 20px;
 }
 .article-entry blockquote footer {
-  font-size: 16px;
-  margin: 1.6em 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  margin: 1.8em 0;
+  font-family: 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -603,11 +604,11 @@ a.article-title:hover {
 }
 .article-footer {
   zoom: 1;
-  font-size: 16px;
-  line-height: 1.6em;
+  font-size: 1.2em;
+  line-height: 1.8em;
   border-top: 1px solid #ddd;
-  padding-top: 1.6em;
-  padding-bottom: 1.6em;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
   margin-top: 4rem;
 }
 .article-footer:before,
@@ -833,7 +834,7 @@ a.article-title:hover {
 .archive-article-title {
   text-decoration: none;
   color: #a94442;
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 .archive-article-title:hover {
   color: #a94442;
@@ -871,7 +872,7 @@ a.article-title:hover {
   text-align: center;
 }
 #footer-info {
-  line-height: 1.6em;
+  line-height: 1.8em;
   font-size: 0.85em;
 }
 #gotop {
@@ -904,7 +905,7 @@ a.article-title:hover {
   border-width: 1px 0;
   overflow: auto;
   color: #ccc;
-  line-height: 25.6px;
+  line-height: 2.16em;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
@@ -993,7 +994,7 @@ a.article-title:hover {
 .article-entry .gist .gist-file .gist-meta {
   background: #2d2d2d;
   color: #999;
-  font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 0.85em 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 0;
   padding: 0;
   margin-top: 1em;
@@ -1182,7 +1183,7 @@ pre .javascript .function {
   color: #999;
 }
 .widget {
-  line-height: 1.6em;
+  line-height: 1.8em;
   word-wrap: break-word;
   font-size: 0.9em;
 }
@@ -1283,7 +1284,7 @@ pre .javascript .function {
   color: #555;
   width: 100%;
   height: 1.8rem;
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: none;
   border: 1px solid #ddd;
   -webkit-border-radius: 6px;

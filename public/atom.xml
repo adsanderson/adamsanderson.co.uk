@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A developer's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://adamsanderson.co.uk/"/>
-  <updated>2014-06-03T21:16:38.145Z</updated>
+  <updated>2014-06-30T19:45:46.910Z</updated>
   <id>http://adamsanderson.co.uk/</id>
   
   <author>
@@ -13,6 +13,57 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[DevTools the third space]]></title>
+    <link href="http://adamsanderson.co.uk/2014/06/26/DevTools%20the%20third%20place/"/>
+    <id>http://adamsanderson.co.uk/2014/06/26/DevTools the third place/</id>
+    <published>2014-06-26T20:59:46.000Z</published>
+    <updated>2014-06-26T21:11:59.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="it-always-comes-down-to-coffee-and-development">It always comes down to coffee and development</h3><img src="/images/origin_294145821.jpg" title="starbucks coffee">
+
+
+
+<p>I recently thought of a tenuous link between Chrome DevTools and Starbucks. Starbucks set itself an early goal to become the &#39;<a href="http://www.starbucks.co.uk/about-us/our-heritage" target="_blank">third space</a>&#39;, the space a person would spend time between work and home. </p>
+<h3 id="and-now-for-the-tenuous-link">and now for the tenuous link</h3><p>In my development Devtools has become my third space. Between the source and the output. You&#39;d write some code, check the output and based of the result, you&#39;d go back and update your code. Back and forth a binary existence of either coding or assessing results.</p>
+<p>With Devtools I now have a third space, and for me my most important space as this is where I do my thinking. As it gives me hooks into the three <strong>areas</strong> that make up a website the DOM </p>
+<img src="/images/javascript-debugging.png" title="Chrome Devtools">
+
+
+
+<h3 id="theoretical-next-step">theoretical next step</h3><p>So the next step would be to start saving the changes I&#39;m making in Devtools. Which is where <a href="http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/#toc-workspaces" target="_blank">workspaces</a> come in, the ability to map the files delivered to the browser to it&#39;s location on the disk, allowing the source files to be edited. </p>
+<p>However the files being delivered to the browser are not always the source files that need editing. Pre-processors for CSS and JavaScript are extremely helpful in development but this adds an extra layer between the source files and the workspace. This is where <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/" target="_blank">source maps</a> come into play. To bridge that link between the delivered files and the source files.</p>
+<h3 id="and-in-anger?">and in anger?</h3><p>Reading <a href="http://remysharp.com/2014/05/30/commonjs-with-devtools-live-edit/" target="_blank">Remy Sharp&#39;s blog</a> source maps may not be the answer quite yet for JavaScript but I plan on testing workspaces, source maps and browserify together. Its in the &#39;would be nice&#39; column to add to my workflow. The one that &#39;would be great&#39; to add is CSS. </p>
+<p>So I&#39;ll grab a coffee set up source maps and workspaces see how they work, try and blur the lines between spaces and report back.</p>
+photo credit: <a href="http://www.flickr.com/photos/elpatojo/294145821/" target="_blank">el patojo</a> via <a href="http://photopin.com" target="_blank">photopin</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a>
+
+
+
+]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Devtings: getting started]]></title>
+    <link href="http://adamsanderson.co.uk/2014/06/12/devtingsfirststep/"/>
+    <id>http://adamsanderson.co.uk/2014/06/12/devtingsfirststep/</id>
+    <published>2014-06-12T20:07:47.000Z</published>
+    <updated>2014-06-12T20:10:58.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://devtings.net" target="_blank">devtings.net</a> now forwards you to the Devtings <a href="http://www.meetup.com/devtings/" target="_blank">meetup</a> page. There right now is a the first scheduled event for a pre-meetup meetup. It&#39;s in need of a date and location, but to know when and where to schedule it, some members are needed so we can figure it all out.  </p>
+<img src="/images/meetup-devtings.png" title="meetup devtings">
+
+
+
+<h3 id="quick-hello">quick hello</h3><p>I did get a surprise after I set-up the group. I got an email from meetup HQ giving some advice on running successful meetups and then at the end of the email a &#39;p.s.&#39; just to let me know they&#39;d updated the topics attached to the group. I checked and saw they&#39;d added &#39;tech talks&#39; and &#39;education and technology&#39; to the list of topics. Which I thought was excellent (although maybe a bit ambitious to start off with). They did also mention one fact in the email that meant I had made a small miss-calculation.</p>
+<h3 id="live-and-learn">live and learn</h3><p>I set the meetup site on a Tuesday. Thinking that it would be sent out to <a href="http://www.meetup.com" target="_blank">meetup.com</a> members right away. This is not the case, they actually wait 4 days before posting it out. So rather than the notice being sent out midweek, it will go out just before the weekend. I do like the window though, gives you an opportunity to get the page set-up fully, while at the same time giving you a ticking clock incentive to get it done.</p>
+<h3 id="what-next">what next</h3><p>Hopefully get a few members over the next few days and schedule the pre-meetup. Go down the pub (probably), and see what we can turn Devtings into.</p>
+]]></content>
+    
+    
+      <category term="devtings" scheme="http://adamsanderson.co.uk/tags/devtings/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[devtings]]></title>
