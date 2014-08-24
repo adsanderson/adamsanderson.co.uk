@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A developer's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://adamsanderson.co.uk/"/>
-  <updated>2014-06-30T19:45:46.910Z</updated>
+  <updated>2014-08-24T15:35:26.437Z</updated>
   <id>http://adamsanderson.co.uk/</id>
   
   <author>
@@ -22,22 +22,16 @@
     <updated>2014-06-26T21:11:59.000Z</updated>
     <content type="html"><![CDATA[<h3 id="it-always-comes-down-to-coffee-and-development">It always comes down to coffee and development</h3><img src="/images/origin_294145821.jpg" title="starbucks coffee">
 
-
-
-<p>I recently thought of a tenuous link between Chrome DevTools and Starbucks. Starbucks set itself an early goal to become the &#39;<a href="http://www.starbucks.co.uk/about-us/our-heritage" target="_blank">third space</a>&#39;, the space a person would spend time between work and home. </p>
+<p>I recently thought of a tenuous link between Chrome DevTools and Starbucks. Starbucks set itself an early goal to become the &#39;<a href="http://www.starbucks.co.uk/about-us/our-heritage" target="_blank" rel="external">third space</a>&#39;, the space a person would spend time between work and home. </p>
 <h3 id="and-now-for-the-tenuous-link">and now for the tenuous link</h3><p>In my development Devtools has become my third space. Between the source and the output. You&#39;d write some code, check the output and based of the result, you&#39;d go back and update your code. Back and forth a binary existence of either coding or assessing results.</p>
 <p>With Devtools I now have a third space, and for me my most important space as this is where I do my thinking. As it gives me hooks into the three <strong>areas</strong> that make up a website the DOM </p>
 <img src="/images/javascript-debugging.png" title="Chrome Devtools">
 
-
-
-<h3 id="theoretical-next-step">theoretical next step</h3><p>So the next step would be to start saving the changes I&#39;m making in Devtools. Which is where <a href="http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/#toc-workspaces" target="_blank">workspaces</a> come in, the ability to map the files delivered to the browser to it&#39;s location on the disk, allowing the source files to be edited. </p>
-<p>However the files being delivered to the browser are not always the source files that need editing. Pre-processors for CSS and JavaScript are extremely helpful in development but this adds an extra layer between the source files and the workspace. This is where <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/" target="_blank">source maps</a> come into play. To bridge that link between the delivered files and the source files.</p>
-<h3 id="and-in-anger?">and in anger?</h3><p>Reading <a href="http://remysharp.com/2014/05/30/commonjs-with-devtools-live-edit/" target="_blank">Remy Sharp&#39;s blog</a> source maps may not be the answer quite yet for JavaScript but I plan on testing workspaces, source maps and browserify together. Its in the &#39;would be nice&#39; column to add to my workflow. The one that &#39;would be great&#39; to add is CSS. </p>
+<h3 id="theoretical-next-step">theoretical next step</h3><p>So the next step would be to start saving the changes I&#39;m making in Devtools. Which is where <a href="http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/#toc-workspaces" target="_blank" rel="external">workspaces</a> come in, the ability to map the files delivered to the browser to it&#39;s location on the disk, allowing the source files to be edited. </p>
+<p>However the files being delivered to the browser are not always the source files that need editing. Pre-processors for CSS and JavaScript are extremely helpful in development but this adds an extra layer between the source files and the workspace. This is where <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/" target="_blank" rel="external">source maps</a> come into play. To bridge that link between the delivered files and the source files.</p>
+<h3 id="and-in-anger?">and in anger?</h3><p>Reading <a href="http://remysharp.com/2014/05/30/commonjs-with-devtools-live-edit/" target="_blank" rel="external">Remy Sharp&#39;s blog</a> source maps may not be the answer quite yet for JavaScript but I plan on testing workspaces, source maps and browserify together. Its in the &#39;would be nice&#39; column to add to my workflow. The one that &#39;would be great&#39; to add is CSS. </p>
 <p>So I&#39;ll grab a coffee set up source maps and workspaces see how they work, try and blur the lines between spaces and report back.</p>
-photo credit: <a href="http://www.flickr.com/photos/elpatojo/294145821/" target="_blank">el patojo</a> via <a href="http://photopin.com" target="_blank">photopin</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a>
-
-
+photo credit: <a href="http://www.flickr.com/photos/elpatojo/294145821/" target="_blank" rel="external">el patojo</a> via <a href="http://photopin.com" target="_blank" rel="external">photopin</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank" rel="external">cc</a>
 
 ]]></content>
     
@@ -45,18 +39,16 @@ photo credit: <a href="http://www.flickr.com/photos/elpatojo/294145821/" target=
   </entry>
   
   <entry>
-    <title><![CDATA[Devtings: getting started]]></title>
+    <title><![CDATA[Devtings getting started]]></title>
     <link href="http://adamsanderson.co.uk/2014/06/12/devtingsfirststep/"/>
     <id>http://adamsanderson.co.uk/2014/06/12/devtingsfirststep/</id>
     <published>2014-06-12T20:07:47.000Z</published>
-    <updated>2014-06-12T20:10:58.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://devtings.net" target="_blank">devtings.net</a> now forwards you to the Devtings <a href="http://www.meetup.com/devtings/" target="_blank">meetup</a> page. There right now is a the first scheduled event for a pre-meetup meetup. It&#39;s in need of a date and location, but to know when and where to schedule it, some members are needed so we can figure it all out.  </p>
+    <updated>2014-08-24T14:09:24.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://devtings.net" target="_blank" rel="external">devtings.net</a> now forwards you to the Devtings <a href="http://www.meetup.com/devtings/" target="_blank" rel="external">meetup</a> page. There right now is a the first scheduled event for a pre-meetup meetup. It&#39;s in need of a date and location, but to know when and where to schedule it, some members are needed so we can figure it all out.  </p>
 <img src="/images/meetup-devtings.png" title="meetup devtings">
 
-
-
 <h3 id="quick-hello">quick hello</h3><p>I did get a surprise after I set-up the group. I got an email from meetup HQ giving some advice on running successful meetups and then at the end of the email a &#39;p.s.&#39; just to let me know they&#39;d updated the topics attached to the group. I checked and saw they&#39;d added &#39;tech talks&#39; and &#39;education and technology&#39; to the list of topics. Which I thought was excellent (although maybe a bit ambitious to start off with). They did also mention one fact in the email that meant I had made a small miss-calculation.</p>
-<h3 id="live-and-learn">live and learn</h3><p>I set the meetup site on a Tuesday. Thinking that it would be sent out to <a href="http://www.meetup.com" target="_blank">meetup.com</a> members right away. This is not the case, they actually wait 4 days before posting it out. So rather than the notice being sent out midweek, it will go out just before the weekend. I do like the window though, gives you an opportunity to get the page set-up fully, while at the same time giving you a ticking clock incentive to get it done.</p>
+<h3 id="live-and-learn">live and learn</h3><p>I set the meetup site on a Tuesday. Thinking that it would be sent out to <a href="http://www.meetup.com" target="_blank" rel="external">meetup.com</a> members right away. This is not the case, they actually wait 4 days before posting it out. So rather than the notice being sent out midweek, it will go out just before the weekend. I do like the window though, gives you an opportunity to get the page set-up fully, while at the same time giving you a ticking clock incentive to get it done.</p>
 <h3 id="what-next">what next</h3><p>Hopefully get a few members over the next few days and schedule the pre-meetup. Go down the pub (probably), and see what we can turn Devtings into.</p>
 ]]></content>
     
@@ -71,14 +63,14 @@ photo credit: <a href="http://www.flickr.com/photos/elpatojo/294145821/" target=
     <id>http://adamsanderson.co.uk/2014/05/28/devtings/</id>
     <published>2014-05-28T20:14:30.000Z</published>
     <updated>2014-05-28T20:45:06.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="who-wants-to-talk-about-development-stuff?">who wants to talk about development stuff?</h3><p>If you go to <a href="http://www.meet-up.com/" target="_blank">meetup.com</a> and search for developer meet-ups, depending on where you are in the country you will see dozens of different meet-ups available for all flavours, variations and discipline of developer. With one small caveat the majority are based in a city.</p>
+    <content type="html"><![CDATA[<h3 id="who-wants-to-talk-about-development-stuff?">who wants to talk about development stuff?</h3><p>If you go to <a href="http://www.meet-up.com/" target="_blank" rel="external">meetup.com</a> and search for developer meet-ups, depending on where you are in the country you will see dozens of different meet-ups available for all flavours, variations and discipline of developer. With one small caveat the majority are based in a city.</p>
 <p>As a developer who would like to talk to other developers about development, this posed a problem for me. Being based in Hastings the amount of time it would take to travel to these meet-ups made attending any very difficult. So I had an idea; Why not set-up a local developer meet-up. A developer meet-up in Hastings, so devtings.</p>
-<p>That&#39;s as far as I&#39;ve got so far, an idea (and a domain, and an <a href="http://webchat.freenode.net/?channels=devtings" target="_blank">IRC channel</a>). This blog post will be about the thoughts and assumptions I&#39;ve had regarding the setting up the meet-up, and as we move forward my plan is to blog about the reality of it.</p>
-<h3 id="meet-ups-in-theory">meet-ups in theory</h3><p>One of the things I have realised is that a local dev meet-up can&#39;t be the same as a larger meet-up. Firstly you can&#39;t be too specific in your topics and audience. A meet-up like <a href="http://www.meet-up.com/Functional-Brighton/" target="_blank">Functional Brighton</a> would be too specific to build a regular meet-up around, however talks and discussion about functional programming would make a great contribution. A good model I think for this is podcasting. A podcast like <a href="http://www.dotnetrocks.com/" target="_blank">.Net Rocks!</a> will cover various different aspects and disciplines of development. Then with guest experts to deliver some deep insight into the topics covered.</p>
+<p>That&#39;s as far as I&#39;ve got so far, an idea (and a domain, and an <a href="http://webchat.freenode.net/?channels=devtings" target="_blank" rel="external">IRC channel</a>). This blog post will be about the thoughts and assumptions I&#39;ve had regarding the setting up the meet-up, and as we move forward my plan is to blog about the reality of it.</p>
+<h3 id="meet-ups-in-theory">meet-ups in theory</h3><p>One of the things I have realised is that a local dev meet-up can&#39;t be the same as a larger meet-up. Firstly you can&#39;t be too specific in your topics and audience. A meet-up like <a href="http://www.meet-up.com/Functional-Brighton/" target="_blank" rel="external">Functional Brighton</a> would be too specific to build a regular meet-up around, however talks and discussion about functional programming would make a great contribution. A good model I think for this is podcasting. A podcast like <a href="http://www.dotnetrocks.com/" target="_blank" rel="external">.Net Rocks!</a> will cover various different aspects and disciplines of development. Then with guest experts to deliver some deep insight into the topics covered.</p>
 <h3 id="presentations">presentations</h3><p>With a local meet-up it will be more difficult to get a wide variety of industry experts to come and give presentations. But there is opportunity in that as well. There will be people who want to be industry experts, who want to be a presenter at conferences a local meet-up would give them a place to practice, develop their skills and hopefully be a stepping stone for them. The other opportunity is for regular members of the meet-up to give their own presentations. Again this gives people an opportunity to develop their own skills and confidence.</p>
 <h3 id="other-items-of-business">Other items of business</h3><p>Although the presentations will be an important part of the meet-up, they will not be the only part. The meet-up should be a relaxed environment where developers can discuss anything they want. Structure is important so people know what to expect but at the same time things need to be flexible and if this is going to be a successful venture it needs to grow organically.</p>
 <h3 id="how-much-is-this-all-going-to-cost?">How much is this all going to cost?</h3><p>The costs of a meet-up. Costs are something that can grow and grow quickly. Starting off with organisation; you need an online presence you can point people to. Then with a place people can go it needs to be followed up with some promotion. Venues, food and drink, guest speakers; all these things cost money. So while this idea is getting off the ground we&#39;ll ignore the more formal ideas. Keep costs low, see if there is an interest and build from there.</p>
-<h3 id="what-we&#39;ve-got-and-what-we-need">what we&#39;ve got and what we need</h3><p>So far we have a domain (<a href="http://www.devtings.net/" target="_blank">devtings.net</a>) and thanks to <a href="http://www.alexhitchins.co.uk/" target="_blank">Alex Hitchins</a> an IRC channel <a href="http://webchat.freenode.net/?channels=devtings" target="_blank">#devtings</a>.</p>
+<h3 id="what-we&#39;ve-got-and-what-we-need">what we&#39;ve got and what we need</h3><p>So far we have a domain (<a href="http://www.devtings.net/" target="_blank" rel="external">devtings.net</a>) and thanks to <a href="http://www.alexhitchins.co.uk/" target="_blank" rel="external">Alex Hitchins</a> an IRC channel <a href="http://webchat.freenode.net/?channels=devtings" target="_blank" rel="external">#devtings</a>.</p>
 <h3 id="pre-meet-up-meet-up">pre-meet-up-meet-up</h3><p>So far I&#39;ve floated the idea to a few developers I know and work with and have got a positive response. So the next step, it&#39;s to get a few more devs and go to the pub. Start fleshing out some ideas, see what others can contribute and lets take a bunch of devs living in Hastings and start building a community of developers.</p>
 ]]></content>
     
@@ -90,27 +82,27 @@ photo credit: <a href="http://www.flickr.com/photos/elpatojo/294145821/" target=
   </entry>
   
   <entry>
-    <title><![CDATA[From Bootstrap: How to make a point with CSS]]></title>
+    <title><![CDATA[]]></title>
     <link href="http://adamsanderson.co.uk/2014/05/19/From_Bootstrap_How_to_make_a_point_with_CSS/"/>
     <id>http://adamsanderson.co.uk/2014/05/19/From_Bootstrap_How_to_make_a_point_with_CSS/</id>
     <published>2014-05-19T12:04:41.000Z</published>
     <updated>2014-05-27T19:58:16.000Z</updated>
-    <content type="html"><![CDATA[<p>Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to get there. In Bootstrap the point is created using a pseudo element and also takes advantage of <code>background-clip</code>, but I&#39;ll be keeping things simple here.</p>
-<ol>
-<li>Start with an element (div) and add a border</li>
-<li>Each side of the border is connected at either end by a mitre joint. This is what is taken advantage of To create the pointer look.</li>
-<li>The height and width of an element is the internal size of that element, the border is calculated on top of that. So the border will still be drawn even when the height and width are both set to 0. I&#39;ve also increased the size of the border here.</li>
-<li>Final step is to make 3 of the sides transparent and the <code>background-color</code> transparent. This leaves you with a pointer.</li>
-</ol>
-<p>You don&#39;t have to have an equilateral triangle, by changing the widths of the 2 adjacent sides you can create a variety of triangular shapes. The demos all have a <code>border-top-width</code> of 20px.</p>
-<iframe width="100%" height="300" src="http://jsfiddle.net/6gy3F/embedded/result,html,css/light" frameborder="0" allowfullscreen></iframe>
+    <content type="html"><![CDATA[<p>title: From Bootstrap: How to make a point with CSS
+tags:</p>
+<ul>
+<li>CSS</li>
+<li>Bootstrap</li>
+</ul>
+<hr>
+<p>Something I noticed while digging around in bootstrap was how they added a point to a dropdown menu. I thought I&#39;d demo a simplified version of the steps to get there. In Bootstrap the point is created using a pseudo element and also takes advantage of </p>
+<figure class="highlight background-clip```,"><figcaption><span>but I'll be keeping things simple here.</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">1. <span class="operator"><span class="keyword">Start</span> <span class="keyword">with</span> an element (<span class="keyword">div</span>) <span class="keyword">and</span> <span class="keyword">add</span> a border</span></div><div class="line"><span class="number">2.</span> <span class="keyword">Each</span> side <span class="keyword">of</span> the border <span class="keyword">is</span> connected <span class="keyword">at</span> either <span class="keyword">end</span> <span class="keyword">by</span> a mitre joint. This <span class="keyword">is</span> what <span class="keyword">is</span> taken advantage <span class="keyword">of</span> <span class="keyword">To</span> <span class="keyword">create</span> the pointer look.</div><div class="line"><span class="number">3.</span> The height <span class="keyword">and</span> width <span class="keyword">of</span> an element <span class="keyword">is</span> the internal <span class="keyword">size</span> <span class="keyword">of</span> that element, the border <span class="keyword">is</span> calculated <span class="keyword">on</span> top <span class="keyword">of</span> that. So the border will still be drawn even <span class="keyword">when</span> the height <span class="keyword">and</span> width <span class="keyword">are</span> <span class="keyword">both</span> <span class="keyword">set</span> <span class="keyword">to</span> <span class="number">0.</span> I<span class="string">'ve also increased the size of the border here.</span></div><div class="line">4. Final step is to make 3 of the sides transparent and the</div></pre></td></tr></table></figure>
 
-]]></content>
+<p>background-color</p>
+<figure class="highlight transparent."><figcaption><span>This leaves you with a pointer.</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line"><span class="vhdl">You don<span class="attribute">'t</span> have <span class="keyword">to</span> have an equilateral triangle, by changing the widths <span class="keyword">of</span> the <span class="number">2</span> adjacent sides you can create a variety <span class="keyword">of</span> triangular shapes. The demos <span class="keyword">all</span> have a</span></div></pre></td></tr></table></figure>
+
+<p>border-top-width``` of 20px.</p>
+ <iframe width="100%" height="300" src="http://jsfiddle.net/6gy3F/embedded/result,html,css/light" frameborder="0" allowfullscreen></iframe>]]></content>
     
-    
-      <category term="CSS" scheme="http://adamsanderson.co.uk/tags/CSS/"/>
-    
-      <category term="Bootstrap" scheme="http://adamsanderson.co.uk/tags/Bootstrap/"/>
     
   </entry>
   

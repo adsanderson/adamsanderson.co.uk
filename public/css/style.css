@@ -125,7 +125,7 @@ body,
 }
 body {
   background: #fff;
-  font: 1.2em 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1.1em 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
@@ -163,7 +163,7 @@ body {
   }
 }
 .page-header {
-  padding-left: 40px;
+  padding-left: 15px;
 }
 .title {
   color: #a94442;
@@ -378,7 +378,7 @@ body {
 }
 .note .note-marker {
   padding-right: 6px;
-  font-size: 1.2em !important;
+  font-size: 1.1em !important;
 }
 .thumbnail {
   float: right;
@@ -535,7 +535,7 @@ a.article-title:hover {
   margin: 1.8em 20px;
 }
 .article-entry blockquote footer {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 1.8em 0;
   font-family: 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -604,7 +604,7 @@ a.article-title:hover {
 }
 .article-footer {
   zoom: 1;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.8em;
   border-top: 1px solid #ddd;
   padding-top: 1.8em;
@@ -905,7 +905,7 @@ a.article-title:hover {
   border-width: 1px 0;
   overflow: auto;
   color: #ccc;
-  line-height: 2.16em;
+  line-height: 1.98em;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
