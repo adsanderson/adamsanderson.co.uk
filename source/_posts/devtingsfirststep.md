@@ -1,4 +1,4 @@
-title: Devtings: getting started
+title: Devtings getting started
 tags:
 - devtings
 ---
