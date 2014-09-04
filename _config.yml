@@ -101,7 +101,9 @@ stylus:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: github
+  repo: https://github.com/adsanderson/adsanderson.github.io.git
+  branch: master
 
 # Plugins:
 ## RSS Feed
