@@ -217,3 +217,5 @@ pip-log.txt
 node_modules
 themes/nut
 themes/landscape
+.deploy
+public
