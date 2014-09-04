@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A developer's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://adamsanderson.co.uk/"/>
-  <updated>2014-08-24T15:35:26.437Z</updated>
+  <updated>2014-08-30T18:27:37.286Z</updated>
   <id>http://adamsanderson.co.uk/</id>
   
   <author>
@@ -13,6 +13,125 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[A Question About Module Dependencies]]></title>
+    <link href="http://adamsanderson.co.uk/2014/08/30/A%20Question%20About%20Module%20Dependencies/"/>
+    <id>http://adamsanderson.co.uk/2014/08/30/A Question About Module Dependencies/</id>
+    <published>2014-08-30T18:25:00.000Z</published>
+    <updated>2014-08-30T18:25:25.000Z</updated>
+    <content type="html"><![CDATA[<p>After writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using <a href="http://browserify.org/" target="_blank" rel="external">browserify</a>. I had a feeling there would be a trend in front-end development for micro libraries (in the style of node) on the horizon.</p>
+<p>I have yet to figure out if this will be a good thing for the front-end.</p>
+<p>One of the strengths of node modules is how it deals with the dependencies for each module; and that is to keep each module and the modules it is dependant on in a separate package. </p>
+<h2 id="that&#39;s-a-lot-of-utility-libraries">That&#39;s a lot of utility libraries</h2><p>This can lead to duplication in a project. As two modules can both have a dependency to the same module but each package for those original two modules will have it&#39;s own version of the dependency included.</p>
+<img src="/images/modules.png" title="module example">
+
+<p>This can result in duplication in the final version of the product being produced.</p>
+<p>As of writing (28th August 2014) there are 91 472 packages on <a href="https://www.npmjs.org/" target="_blank" rel="external">npm</a>; and of the top ten most depended on packages underscore and lodash (two utility libraries that have a common API) are depended on by 11 647 packages (6937 and 4710 respectively). So just over 12% of the packages share this dependency and each package includes it&#39;s own version of underscore/lodash.</p>
+<img src="/images/npm2014-08-28.png" title="npmjs.org">
+
+<h2 id="version-was-an-important-word">Version was an important word</h2><p>One of the advantages of each package having it&#39;s own dependencies is the version of the depended on module does not matter. e.g. moduleA could require lodash 1.1.1; while the newer moduleB uses lodash 2.4.1. </p>
+<h2 id="in-the-node-world-this-way-is-working!">In the node world this way is working!</h2><p>Server side this works great. Everything is kept clean and separated. The advantages of this approach at the server (and local development) side greatly outweigh the costs of duplication.</p>
+<h2 id="will-this-work-for-the-front-end">Will this work for the front-end</h2><p>In the front-end world of concatination and minification. The costs of duplication seem higher. More data being passed down the wire, more for the browser to process. </p>
+<p>As with many things in the development world its striking that balance between the advantages a technology brings versus the costs.</p>
+<p>So long term another technique could be used for smart reusable clean modules. </p>
+<p>To use this node style technique in front-end development, while trying to minimise the costs of duplication, will require restraint from developers. Restraint from front-end devs to decide on a case by case basis of the costs of adding a new module.</p>
+]]></content>
+    
+    
+      <category term="development" scheme="http://adamsanderson.co.uk/tags/development/"/>
+    
+      <category term="JavaScipt" scheme="http://adamsanderson.co.uk/tags/JavaScipt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://adamsanderson.co.uk/2014/08/30/next%20level%20libraries/"/>
+    <id>http://adamsanderson.co.uk/2014/08/30/next level libraries/</id>
+    <published>2014-08-30T18:20:08.000Z</published>
+    <updated>2014-08-30T18:19:30.000Z</updated>
+    <content type="html"><![CDATA[<p>title: A Question About Module Dependencies
+tags:
+-development</p>
+<h2 id="-javascript">-JavaScript</h2><p>After writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using <a href="http://browserify.org/" target="_blank" rel="external">browserify</a>. I had a feeling there would be a trend in front-end development for micro libraries (in the style of node) on the horizon.</p>
+<p>I have yet to figure out if this will be a good thing for the front-end.</p>
+<p>One of the strengths of node modules is how it deals with the dependencies for each module; and that is to keep each module and the modules it is dependant on in a separate package. </p>
+<h2 id="that&#39;s-a-lot-of-utility-libraries">That&#39;s a lot of utility libraries</h2><p>This can lead to duplication in a project. As two modules can both have a dependency to the same module but each package for those original two modules will have it&#39;s own version of the dependency included.</p>
+<img src="/images/modules.png" title="module example">
+
+<p>This can result in duplication in the final version of the product being produced.</p>
+<p>As of writing (28th August 2014) there are 91 472 packages on <a href="https://www.npmjs.org/" target="_blank" rel="external">npm</a>; and of the top ten most depended on packages underscore and lodash (two utility libraries that have a common API) are depended on by 11 647 packages (6937 and 4710 respectively). So just over 12% of the packages share this dependency and each package includes it&#39;s own version of underscore/lodash.</p>
+<img src="/images/npm2014-08-28.png" title="npmjs.org">
+
+<h2 id="version-was-an-important-word">Version was an important word</h2><p>One of the advantages of each package having it&#39;s own dependencies is the version of the depended on module does not matter. e.g. moduleA could require lodash 1.1.1; while the newer moduleB uses lodash 2.4.1. </p>
+<h2 id="in-the-node-world-this-way-is-working!">In the node world this way is working!</h2><p>Server side this works great. Everything is kept clean and separated. The advantages of this approach at the server (and local development) side greatly outweigh the costs of duplication.</p>
+<h2 id="will-this-work-for-the-front-end">Will this work for the front-end</h2><p>In the front-end world of concatination and minification. The costs of duplication seem higher. More data being passed down the wire, more for the browser to process. </p>
+<p>As with many things in the development world its striking that balance between the advantages a technology brings versus the costs.</p>
+<p>So long term another technique could be used for smart reusable clean modules. </p>
+<p>To use this node style technique in front-end development, while trying to minimise the costs of duplication, will require restraint from developers. Restraint from front-end devs to decide on a case by case basis of the costs of adding a new module.</p>
+]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://adamsanderson.co.uk/2014/08/29/next%20level%20libraries/"/>
+    <id>http://adamsanderson.co.uk/2014/08/29/next level libraries/</id>
+    <published>2014-08-29T19:44:22.000Z</published>
+    <updated>2014-08-29T19:43:01.000Z</updated>
+    <content type="html"><![CDATA[<p>title: A Question About Module Dependencies
+tags:
+-development
+-JavaScript</p>
+<h2 id="-thoughts">-Thoughts</h2><p>After writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using <a href="http://browserify.org/" target="_blank" rel="external">browserify</a>. I had a feeling there would be a trend in front-end development for micro libraries (in the style of node) on the horizon.</p>
+<p>I have yet to figure out if this will be a good thing for the front-end.</p>
+<p>One of the strengths of node modules is how it deals with the dependencies for each module; and that is to keep each module and the modules it is dependant on in a separate package. </p>
+<h2 id="that&#39;s-a-lot-of-utility-libraries">That&#39;s a lot of utility libraries</h2><p>This can lead to duplication in a project. As two modules can both have a dependency to the same module but each package for those original two modules will have it&#39;s own version of the dependency included.</p>
+<img src="/images/modules.png" title="module example">
+
+<p>As of writing (28th August 2014) there are 91 472 packages on <a href="https://www.npmjs.org/" target="_blank" rel="external">npm</a>; and of the top ten most depended on packages underscore and lodash (two utility libraries that have a common API) are depended on by 11 647 packages (6937 and 4710 respectively). So just over 12% of the packages share this dependency and each package includes it&#39;s own version of underscore/lodash.</p>
+<img src="/images/npm2014-08-28.png" title="npmjs.org">
+
+<h2 id="version-was-an-important-word">version was an important word</h2><p>One of the advantages of each package having it&#39;s own dependencies is the version of the depended on module does not matter. e.g. moduleA could require lodash 1.1.1; while the newer moduleB uses lodash 2.4.1. </p>
+<h2 id="in-the-node-world-this-way-is-working!">In the node world this way is working!</h2><p>Server side this works great. Everything is kept clean and separated. The advantages of this approach at the server (and local development) side greatly outweigh the costs of duplication.</p>
+<h2 id="will-this-work-for-the-front-end">Will this work for the front-end</h2><p>In the front-end world of concatination and minification. The costs of duplication seem higher. More data being passed down the wire, more for the browser to process. </p>
+<p>One option is to do something completely different, and deal with modules, libraries and packages in a different way.</p>
+<p>Another option is for restraint from front-end developers when selecting the modules to use and </p>
+]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://adamsanderson.co.uk/2014/08/29/next%20level%20libraries/"/>
+    <id>http://adamsanderson.co.uk/2014/08/29/next level libraries/</id>
+    <published>2014-08-29T19:44:22.000Z</published>
+    <updated>2014-08-29T19:43:01.000Z</updated>
+    <content type="html"><![CDATA[<p>title: A Question About Module Dependencies
+tags:
+-development
+-JavaScript</p>
+<h2 id="-thoughts">-Thoughts</h2><p>After writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using <a href="http://browserify.org/" target="_blank" rel="external">browserify</a>. I had a feeling there would be a trend in front-end development for micro libraries (in the style of node) on the horizon.</p>
+<p>I have yet to figure out if this will be a good thing for the front-end.</p>
+<p>One of the strengths of node modules is how it deals with the dependencies for each module; and that is to keep each module and the modules it is dependant on in a separate package. </p>
+<h2 id="that&#39;s-a-lot-of-utility-libraries">That&#39;s a lot of utility libraries</h2><p>This can lead to duplication in a project. As two modules can both have a dependency to the same module but each package for those original two modules will have it&#39;s own version of the dependency included.</p>
+<img src="/images/modules.png" title="module example">
+
+<p>As of writing (28th August 2014) there are 91 472 packages on <a href="https://www.npmjs.org/" target="_blank" rel="external">npm</a>; and of the top ten most depended on packages underscore and lodash (two utility libraries that have a common API) are depended on by 11 647 packages (6937 and 4710 respectively). So just over 12% of the packages share this dependency and each package includes it&#39;s own version of underscore/lodash.</p>
+<img src="/images/npm2014-08-28.png" title="npmjs.org">
+
+<h2 id="version-was-an-important-word">version was an important word</h2><p>One of the advantages of each package having it&#39;s own dependencies is the version of the depended on module does not matter. e.g. moduleA could require lodash 1.1.1; while the newer moduleB uses lodash 2.4.1. </p>
+<h2 id="in-the-node-world-this-way-is-working!">In the node world this way is working!</h2><p>Server side this works great. Everything is kept clean and separated. The advantages of this approach at the server (and local development) side greatly outweigh the costs of duplication.</p>
+<h2 id="will-this-work-for-the-front-end">Will this work for the front-end</h2><p>In the front-end world of concatination and minification. The costs of duplication seem higher. More data being passed down the wire, more for the browser to process. </p>
+<p>One option is to do something completely different, and deal with modules, libraries and packages in a different way.</p>
+<p>Another option is for restraint from front-end developers when selecting the modules to use and </p>
+]]></content>
+    
+    
+  </entry>
   
   <entry>
     <title><![CDATA[DevTools the third space]]></title>

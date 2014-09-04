@@ -99,6 +99,63 @@
       >
   
   
+    <article id="post-2tgxce37ch19vnfr" class="article article-type-post row" itemscope itemprop="blogPost">
+  <div class="article-inner col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2014/08/30/A Question About Module Dependencies/">A Question About Module Dependencies</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2014-08-30T18:25:00.000Z" itemprop="datePublished">Aug 30 2014</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>After writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using <a href="http://browserify.org/" target="_blank" rel="external">browserify</a>. I had a feeling there would be a trend in front-end development for micro libraries (in the style of node) on the horizon.</p>
+<p>I have yet to figure out if this will be a good thing for the front-end.</p>
+<p>One of the strengths of node modules is how it deals with the dependencies for each module; and that is to keep each module and the modules it is dependant on in a separate package. </p>
+<h2 id="that&#39;s-a-lot-of-utility-libraries">That&#39;s a lot of utility libraries</h2><p>This can lead to duplication in a project. As two modules can both have a dependency to the same module but each package for those original two modules will have it&#39;s own version of the dependency included.</p>
+<img src="/images/modules.png" title="module example">
+
+<p>This can result in duplication in the final version of the product being produced.</p>
+<p>As of writing (28th August 2014) there are 91 472 packages on <a href="https://www.npmjs.org/" target="_blank" rel="external">npm</a>; and of the top ten most depended on packages underscore and lodash (two utility libraries that have a common API) are depended on by 11 647 packages (6937 and 4710 respectively). So just over 12% of the packages share this dependency and each package includes it&#39;s own version of underscore/lodash.</p>
+<img src="/images/npm2014-08-28.png" title="npmjs.org">
+
+<h2 id="version-was-an-important-word">Version was an important word</h2><p>One of the advantages of each package having it&#39;s own dependencies is the version of the depended on module does not matter. e.g. moduleA could require lodash 1.1.1; while the newer moduleB uses lodash 2.4.1. </p>
+<h2 id="in-the-node-world-this-way-is-working!">In the node world this way is working!</h2><p>Server side this works great. Everything is kept clean and separated. The advantages of this approach at the server (and local development) side greatly outweigh the costs of duplication.</p>
+<h2 id="will-this-work-for-the-front-end">Will this work for the front-end</h2><p>In the front-end world of concatination and minification. The costs of duplication seem higher. More data being passed down the wire, more for the browser to process. </p>
+<p>As with many things in the development world its striking that balance between the advantages a technology brings versus the costs.</p>
+<p>So long term another technique could be used for smart reusable clean modules. </p>
+<p>To use this node style technique in front-end development, while trying to minimise the costs of duplication, will require restraint from developers. Restraint from front-end devs to decide on a case by case basis of the costs of adding a new module.</p>
+
+        
+        <footer class="article-footer">
+          
+          
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/JavaScipt/">JavaScipt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/development/">development</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
     <article id="post-nnbq0d6jclmq4vr9" class="article article-type-post row" itemscope itemprop="blogPost">
   <div class="article-inner col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
     
@@ -245,23 +302,23 @@
       <ul>
         
           <li class="recent-list">
+            <a href="/2014/08/30/A Question About Module Dependencies/">A Question About Module Dependencies</a>
+          </li>
+        
+          <li class="recent-list">
+            <a href="/2014/08/30/next level libraries/">(no title)</a>
+          </li>
+        
+          <li class="recent-list">
+            <a href="/2014/08/29/next level libraries/">(no title)</a>
+          </li>
+        
+          <li class="recent-list">
+            <a href="/2014/08/29/next level libraries/">(no title)</a>
+          </li>
+        
+          <li class="recent-list">
             <a href="/2014/06/26/DevTools the third place/">DevTools the third space</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2014/06/12/devtingsfirststep/">Devtings getting started</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2014/05/28/devtings/">devtings</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2014/05/19/From_Bootstrap_How_to_make_a_point_with_CSS/">(no title)</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2014/05/10/indie web/">Kevin Marks and the Indie web</a>
           </li>
         
       </ul>

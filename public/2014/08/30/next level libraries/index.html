@@ -3,19 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Categories | Adam Sanderson</title>
+  <title>Adam Sanderson</title>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta name="description" content="title: A Question About Module Dependencies
+tags:
+-development
+-JavaScriptAfter writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using browseri">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Adam Sanderson">
-<meta property="og:url" content="http://adamsanderson.co.uk/categories/">
+<meta property="og:url" content="http://adamsanderson.co.uk/2014/08/30/next level libraries/">
 <meta property="og:site_name" content="Adam Sanderson">
-<meta property="og:description">
+<meta property="og:description" content="title: A Question About Module Dependencies
+tags:
+-development
+-JavaScriptAfter writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using browseri">
+<meta property="og:image" content="/images/modules.png">
+<meta property="og:image" content="/images/npm2014-08-28.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Adam Sanderson">
-<meta name="twitter:description">
+<meta name="twitter:description" content="title: A Question About Module Dependencies
+tags:
+-development
+-JavaScriptAfter writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using browseri">
 
   
     <link rel="alternative" href="/atom.xml" title="Adam Sanderson" type="application/atom+xml">
@@ -87,8 +98,6 @@
             <h1 class="title">
           
             
-              Categories
-            
           
             </h1>
         </div>
@@ -96,8 +105,37 @@
       
       <section id="main" class="container"
         
-      >
-  
+      ><article id="post-sa4g5vbzclcvkd45" class="article article-type-post row" itemscope itemprop="blogPost">
+  <div class="article-inner col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>title: A Question About Module Dependencies
+tags:
+-development</p>
+<h2 id="-javascript">-JavaScript</h2><p>After writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using <a href="http://browserify.org/" target="_blank" rel="external">browserify</a>. I had a feeling there would be a trend in front-end development for micro libraries (in the style of node) on the horizon.</p>
+<p>I have yet to figure out if this will be a good thing for the front-end.</p>
+<p>One of the strengths of node modules is how it deals with the dependencies for each module; and that is to keep each module and the modules it is dependant on in a separate package. </p>
+<h2 id="that&#39;s-a-lot-of-utility-libraries">That&#39;s a lot of utility libraries</h2><p>This can lead to duplication in a project. As two modules can both have a dependency to the same module but each package for those original two modules will have it&#39;s own version of the dependency included.</p>
+<img src="/images/modules.png" title="module example">
+
+<p>This can result in duplication in the final version of the product being produced.</p>
+<p>As of writing (28th August 2014) there are 91 472 packages on <a href="https://www.npmjs.org/" target="_blank" rel="external">npm</a>; and of the top ten most depended on packages underscore and lodash (two utility libraries that have a common API) are depended on by 11 647 packages (6937 and 4710 respectively). So just over 12% of the packages share this dependency and each package includes it&#39;s own version of underscore/lodash.</p>
+<img src="/images/npm2014-08-28.png" title="npmjs.org">
+
+<h2 id="version-was-an-important-word">Version was an important word</h2><p>One of the advantages of each package having it&#39;s own dependencies is the version of the depended on module does not matter. e.g. moduleA could require lodash 1.1.1; while the newer moduleB uses lodash 2.4.1. </p>
+<h2 id="in-the-node-world-this-way-is-working!">In the node world this way is working!</h2><p>Server side this works great. Everything is kept clean and separated. The advantages of this approach at the server (and local development) side greatly outweigh the costs of duplication.</p>
+<h2 id="will-this-work-for-the-front-end">Will this work for the front-end</h2><p>In the front-end world of concatination and minification. The costs of duplication seem higher. More data being passed down the wire, more for the browser to process. </p>
+<p>As with many things in the development world its striking that balance between the advantages a technology brings versus the costs.</p>
+<p>So long term another technique could be used for smart reusable clean modules. </p>
+<p>To use this node style technique in front-end development, while trying to minimise the costs of duplication, will require restraint from developers. Restraint from front-end devs to decide on a case by case basis of the costs of adding a new module.</p>
+
+      
+    </div>
+  </div>
+</article>
 
 
 </section>
@@ -126,65 +164,37 @@
   
     
       <div class="widget-wrap">
-    <h3 class="widget-title">Search</h3>
-    <div id="search-form-wrap">
-      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://adamsanderson.co.uk"></form>
-    </div>
-</div>
-    
-      
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li class="recent-list">
-            <a href="/2014/08/30/A Question About Module Dependencies/">A Question About Module Dependencies</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2014/08/30/next level libraries/">(no title)</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2014/08/29/next level libraries/">(no title)</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2014/08/29/next level libraries/">(no title)</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2014/06/26/DevTools the third place/">DevTools the third space</a>
-          </li>
-        
-      </ul>
-    </div>
+  <div class="post-widget">
+    <i class="fa fa-clock-o"></i>
+    <time datetime="2014-08-30T18:20:08.000Z" itemprop="datePublished">Aug 30 2014</time>
   </div>
+</div>
+
+    
+      
+<div class="widget-wrap center">
+  <h3 class="widget-title">&nbsp;</h3>
+  <ul class="pagination">
+    <li>
+      
+        <a href="/2014/08/30/A Question About Module Dependencies/" class="nav-prev">Prev</a>
+      
+    </li>
+    <li>
+      
+        <a href="/2014/08/29/next level libraries/" class="nav-next">Next</a>
+      
+    </li>
+  </ul>
+</div>
 
 
     
       
   <div class="widget-wrap">
-    <h3 class="widget-title">Links</h3>
-    <div class="widget">
-      <ul>
-        
-         <li class="blogroll">
-           
-             <i class="fa fa-github-alt"></i>
-           
-           <a href="https://github.com/adsanderson/" title="Github">Github</a>
-          </li>
-        
-         <li class="blogroll">
-           
-             <i class="fa fa-linkedin"></i>
-           
-           <a href="http://uk.linkedin.com/pub/adam-sanderson/26/16/b54" title="linkedIn">linkedIn</a>
-          </li>
-        
-      </ul>
+    <div class="post-widget">
+      <i class="fa fa-tags"></i>
+      
     </div>
   </div>
 
