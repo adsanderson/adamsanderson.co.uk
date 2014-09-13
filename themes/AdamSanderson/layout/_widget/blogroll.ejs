@@ -3,14 +3,17 @@
     <h3 class="widget-title">Links</h3>
     <div class="widget">
       <ul>
-        <% theme.links.forEach(function(link){ %>
+        <%  var rel;
+            theme.links.forEach(function(link){ %>
          <li class="blogroll">
            <% if (link.logo){ %>
              <i class="fa fa-<%- link.logo %>"></i>
            <% } else { %>
              <i class="fa fa-anchor"></i>
-           <% } %>
-           <%- link_to(link.url, link.name) %>
+           <% }
+              rel = (link.webIdentity) ? 'rel="me"' : '';
+           %>
+           <a href="<%- link.url %>" title="<%- link.name %>" <%- rel %>><%- link.name %></a>
           </li>
         <% }) %>
       </ul>

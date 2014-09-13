@@ -47,6 +47,7 @@ links:
 - name: Github
   url: https://github.com/adsanderson/
   logo: github-alt
+  webIdentity: true
 - name: linkedIn
   url: http://uk.linkedin.com/pub/adam-sanderson/26/16/b54
   logo: linkedin

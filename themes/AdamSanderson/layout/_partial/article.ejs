@@ -1,4 +1,4 @@
-<article id="<%= post.layout %>-<%= post._id %>" class="article article-type-<%= post.layout %> row" itemscope itemprop="blogPost">
+<article id="<%= post.layout %>-<%= post._id %>" class="article article-type-<%= post.layout %> row h-entry" itemscope itemprop="blogPost">
   <div class="article-inner col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
     <%- partial('post/gallery') %>
     <% if ((is_home() || is_archive() || is_category() || is_tag())
@@ -8,7 +8,7 @@
         <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       </header>
     <% } %>
-    <div class="article-entry" itemprop="articleBody">
+    <div class="article-entry e-content" itemprop="articleBody">
       <% if (is_home() || is_archive() || is_category() || is_tag()){ %>
         <% if (post.excerpt && index){ %>
           <!--<%- thumbnail(post.content, 'thumbnail') %>-->
