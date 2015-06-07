@@ -1,4 +1,4 @@
-title: From Bootstrap: How to make a point with CSS
+title: From Bootstrap - How to make a point with CSS
 tags:
 - CSS
 - Bootstrap
