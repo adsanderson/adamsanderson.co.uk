@@ -1,0 +1,61 @@
+# Header
+menu:
+- name: About
+  path: /about-me
+  logo: user
+- name: Archives
+  path: /archives
+  logo: archive
+- name: Tags
+  path: /tags
+  logo: tags
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+pages:
+- about
+- wiki
+
+wiki_dir: wiki
+wiki_info:
+
+# Sidebar
+sidebar: bottom
+home_widgets:
+- tag
+- search
+- blogroll
+act_widgets:
+- search
+- recent_posts
+- blogroll
+post_widgets:
+- post_date
+- nav
+- post_tag
+
+# Miscellaneous
+google_analytics: UA-1951739-1
+favicon: /favicon.ico
+twitter:
+google_plus:
+
+links:
+- name: Github
+  url: https://github.com/adsanderson/
+  logo: github-alt
+  webIdentity: true
+- name: linkedIn
+  url: http://uk.linkedin.com/pub/adam-sanderson/26/16/b54
+  logo: linkedin
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:
+  path: sitemap.xml

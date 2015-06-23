@@ -14,38 +14,21 @@
       title += ': ' + page.year;
     }
   } else if (is_category()){
-    if (page.category){
-      title = 'Category: ' + page.category;
-    } else {
-      title = 'Categories';
-    }
+    title = 'Category: ' + page.category;
   } else if (is_tag()){
-    if (page.tag){
-      title = 'Tag: ' + page.tag;
-    } else {
-      title = 'Tags';
-    }
-  } else if (is_wiki()){
-    if (page.title !== 'Wiki'){
-      title = 'Wiki: ' + page.title;
-    } else {
-      title = 'Wiki';
-    }
+    title = 'Tag: ' + page.tag;
   }
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
-  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus}) %>
+  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <%- css('css/font-awesome.min') %>
-  <%- css('css/bootstrap.min') %>
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <%- css('css/style') %>
+  <%- partial('google-analytics') %>
 </head>

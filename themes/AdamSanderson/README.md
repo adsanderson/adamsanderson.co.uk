@@ -1,102 +1,111 @@
-# Nut
+# Landscape
 
-A new theme for [Hexo](http://zespia.tw/hexo/) based on the new default theme [Landscape](https://github.com/hexojs/hexo-theme-landscape), and get some ideas form [HaHack](http://www.hahack.com/)
+A brand new default theme for [Hexo].
 
-- [Preview](http://nutinn.com/)
+- [Preview](http://hexo.io/hexo-theme-landscape/)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/seff/nut.git themes/nut
+$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
 ```
 
-**Nut requires Hexo 2.4 and above.**
-
-**lodash and marked modules are required by Nut**
-``` sh
-npm install lodash --save
-npm install marked --save
-```
+**Landscape requires Hexo 2.4 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `nut`.
+Modify `theme` setting in `_config.yml` to `landscape`.
 
 ### Update
 
 ``` bash
-cd themes/nut
+cd themes/landscape
 git pull
 ```
 
 ## Configuration
-Most of the configurations are the same with Landscape, but the following.
 
 ``` yml
-pages:
-- about
-- wiki
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss: /atom.xml
 
-wiki_dir: wiki
-wiki_info:
+# Content
+excerpt_link: Read More
+fancybox: true
 
-home_widgets:
-- search
+# Sidebar
+sidebar: right
+widgets:
 - category
 - tag
-- archive
-- blogroll
-act_widgets:
-- search
+- tagcloud
+- archives
 - recent_posts
-- blogroll
-post_widgets:
-- nav
-- post_date
-- post_category
-- post_tag
 
-links:
-- name: My Github
-  url: https://github.com/
-  logo: github
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
 ```
 
-- **pages** - Pages that will appear on navigation bar, you must create it first.
-- **wiki_dir** - Wiki directory name which locates in the `source` directory, the root directory of wiki should not create any file, the index file is generated automatically.
-- **wiki_info** - Description of your wiki.
-- **home_widgets** - Widgets displaying in the home page.
-- **act_widgets** - Widgets displaying in the archives page, categories page and tags page.
-- **post_widgets** - Widgets displaying in the post page.
-- **links** - Links displaying in the blogroll widget.
-	- **name** - The name of the link.
-	- **url** - The url of the link.
-	- **logo** - The logo of the link,  which should place the last words of the Font Awesome style, for example, you should assign `github` here for the github page link whose Font Awesome style is `fa fa-github`.
+- **menu** - Navigation menu
+- **rss** - RSS link
+- **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
+- **fancybox** - Enable [Fancybox]
+- **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
+- **widgets** - Widgets displaying in sidebar
+- **google_analytics** - Google Analytics ID
+- **favicon** - Favicon path
+- **twitter** - Twiiter ID
+- **google_plus** - Google+ ID
 
 ## Features
 
-### All features of the Landscape theme
+### Fancybox
 
-### Bootstrap
+Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
-Nut uses [Bootstrap](http://getbootstrap.com/) framework, which is **The most popular front-end framework for developing responsive, mobile first projects on the web**.
+```
+![img caption](img url)
+
+{% fancybox img_url [img_thumbnail] [img_caption] %}
+```
 
 ### Sidebar
 
-You can configure different pages with different widgets.
+You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
 
-### Wiki
-You can write your personal wiki on your blog now, not complex, write just like writing a post.
+Landscape provides 5 built-in widgets:
 
-**How to**
+- category
+- tag
+- tagcloud
+- archives
+- recent_posts
 
-- Make a directory in the source directory named **wiki** or the other name that you configure in the `_config.yml` file above.
-- Make a sub directory in the wiki directory, whose name is the category of this wiki page.
-- Copy the page template in the **scaffolds** directory to the current path, then start your writing.
+All of them are enabled by default. You can edit them in `widget` setting.
 
-By default, the directory name is the category of the wiki page, and we only support one level sub directory now.
+## Development
 
-### Tags
-There are a few custom tags for writing post, you can check the syntax by reading the `extend.tag.js` in `scripts` directory.
+### Requirements
+
+- [Grunt] 0.4+
+- Hexo 2.4+
+
+### Grunt tasks
+
+- **default** - Download [Fancybox] and [Font Awesome].
+- **fontawesome** - Only download [Font Awesome].
+- **fancybox** - Only download [Fancybox].
+- **clean** - Clean temporarily files and downloaded files.
+
+[Hexo]: http://zespia.tw/hexo/
+[Fancybox]: http://fancyapps.com/fancybox/
+[Font Awesome]: http://fontawesome.io/
+[Grunt]: http://gruntjs.com/
