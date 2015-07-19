@@ -27,10 +27,12 @@
 
 .article-header
   padding: 0
+  background-color: #EAD98B
 
-.article-header
+.article-header-inner
     max-width: (column-width + gutter-width) * columns + gutter-width
     margin: 0 auto
+    padding-top: 1em
 
 .article-title
   text-decoration: none
@@ -38,7 +40,7 @@
   font-weight: bold
   color: color-default
   line-height: line-height-title
-  transition: color 0.2s
+  transition: color 0.3s
   a&:hover
     color: color-link
 
@@ -54,6 +56,7 @@
     line-height: line-height
     margin: line-height 0
   h1, h2, h3, h4, h5, h6
+    color: color-head-text
     font-weight: bold
   h1, h2, h3, h4, h5, h6
     line-height: line-height-title
