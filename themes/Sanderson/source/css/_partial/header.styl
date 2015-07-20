@@ -1,40 +1,22 @@
-// #header
-  // height: banner-height
-  // position: relative
-  // border-bottom: 1px solid color-border
-  // &:before, &:after
-  //   content: ""
-  //   position: absolute
-  //   left: 0
-  //   right: 0
-  //   height: 40px
-  // &:before
-  //   top: 0
-  //   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent)
-  // &:after
-  //   bottom: 0
-  //   background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))
-
 #header-outer
   height: 100%
   position: relative
+  background-color: color-link
 
 #header-inner
   position: relative
   overflow: hidden
+  nav
+    margin-left: 3%
 
 #header-title
-  padding-top: 10%;
-  text-align: center
-  // height: logo-size
-  // position: absolute
-  // top: 50%
-  // left: 0
-  // margin-top: logo-size * -0.5
+  padding-top: 5%;
+  margin-left: 3%
+  width: 0
 
 $logo-text
   text-decoration: none
-  color: palete-red
+  color: color-white
   font-weight: 300
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
 
@@ -42,8 +24,10 @@ $logo-text
   @extend $logo-text
   transition: color 0.2s
   font-size: logo-size
-  line-height: logo-size
-  letter-spacing: 2px
+  line-height: 1.4em
+  // font-weight: bold
+  // letter-spacing: 2px
+
 
 #subtitle
   @extend $logo-text
@@ -58,31 +42,36 @@ $logo-text
   padding-top: subtitle-size
 
 #main-nav
-  float: left
-  margin-left: -15px
+  // float: left
+  // margin-left: 3%
 
 $nav-link
   float: left
   color: #fff
-  opacity: 0.6
+  // opacity: 0.6
   text-decoration: none
-  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
-  transition: opacity 0.2s
+  // text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+  transition: color 0.2s
   display: block
   padding: 20px 15px
-  &:hover
-    opacity: 1
+  // &:hover
+  //   opacity: 1
 
 .nav-icon
   @extend $nav-link
+  @extend $text-shadow
   font-family: font-icon
   text-align: center
-  font-size: font-size
-  width: font-size
-  height: font-size
-  padding: 20px 15px
+  font-size: logo-size - 4
+  width: logo-size - 4
+  height: logo-size - 4
+  padding: 20px (logo-size - 4) 5%
   position: relative
   cursor: pointer
+  &:first-child
+    padding-left: 0
+  &:hover
+    color: color-link
 
 .main-nav-link
   @extend $nav-link
@@ -102,6 +91,10 @@ $nav-link
   float: right
   margin-right: -15px
 
+.nav-archive
+  &:before
+    content: "\f187"
+
 #nav-rss-link
   &:before
     content: "\f09e"
@@ -109,6 +102,10 @@ $nav-link
 #nav-search-btn
   &:before
     content: "\f002"
+
+.nav-github
+  &:before
+    content: "\f09b"
 
 #search-form-wrap
   position: absolute

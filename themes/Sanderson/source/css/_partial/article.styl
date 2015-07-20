@@ -1,12 +1,11 @@
 .article
-  margin: block-margin 0
-
-.article-inner
   @extend $block
   overflow: hidden
+  margin-bottom: 80px;
 
 .article-meta
   clearfix()
+  color: color-white
 
 .article-date
   @extend $block-caption
@@ -27,20 +26,21 @@
 
 .article-header
   padding: 0
-  background-color: #EAD98B
+  background-color: color-secondary
 
 .article-header-inner
-    max-width: (column-width + gutter-width) * columns + gutter-width
-    margin: 0 auto
-    padding-top: 1em
+  max-width: (column-width + gutter-width) * columns + gutter-width
+  margin: 0 auto
+  padding: 3rem 20px
 
 .article-title
   text-decoration: none
   font-size: 2em
   font-weight: bold
-  color: color-default
+  color: color-white
   line-height: line-height-title
   transition: color 0.3s
+  @extend $text-shadow
   a&:hover
     color: color-link
 
@@ -154,7 +154,7 @@
   margin: 0 auto
   max-width: (column-width + gutter-width) * columns + gutter-width
   a
-    color: color-grey
+    color: color-white
     text-decoration: none
     &:hover
       color: color-default
@@ -162,8 +162,35 @@
 .article-tag-list-item
   float: left
   margin-right: 10px
+  padding: 8px 0
+  font-size: 18px;
+  border-color: white
+  border-style: solid
+  &:nth-child(3n+1)
+    background-color: color-primary
+  &:nth-child(3n+2)
+    background-color: color-link
+  &:nth-child(3n+3)
+    background-color: color-secondary
+  &::before
+    content: ""
+    font-size: 0
+    border: 27px solid white
+    border-bottom-color: transparent
+    border-right-color: transparent
+    border-left-width: 10px
+    border-right-width: 10px
+  &:after
+    content: ""
+    font-size: 0
+    border: 27px solid white
+    border-top-color: transparent
+    border-left-color: transparent
+    border-left-width: 10px
+    border-right-width: 10px
 
 .article-tag-list-link
+  padding: 0 6px
   &:before
     content: "#"
 
