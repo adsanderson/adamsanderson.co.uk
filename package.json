@@ -20,6 +20,8 @@
     "marked": "^0.3.2"
   },
   "devDependencies": {
-    "hexo-browsersync": "^0.1.1"
+    "hexo-browsersync": "^0.1.1",
+    "hexo-html-minifier": "0.0.1",
+    "hexo-uncss": "^0.1.1"
   }
 }

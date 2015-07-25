@@ -66,6 +66,10 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+uncss:
+  enable: true
+html_minifier:
+  exclude:
 
 ## Themes: http://hexo.io/themes/
 theme: Sanderson
