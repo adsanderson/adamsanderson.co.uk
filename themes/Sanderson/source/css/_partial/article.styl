@@ -15,7 +15,6 @@
   float: left
   line-height: 1em
   color: #ccc
-  text-shadow: 0 1px #fff
   margin-left: 8px
   &:before
     content: "\2022"
@@ -40,9 +39,10 @@
   color: color-white
   line-height: line-height-title
   transition: color 0.3s
-  @extend $text-shadow
+  TextShadowHelper1()
   a&:hover
     color: color-link
+    TextShadowHelper2()
 
 .article-entry
   @extend $base-style
@@ -156,8 +156,9 @@
   a
     color: color-white
     text-decoration: none
+    // transition: border 0.3s
     &:hover
-      color: color-default
+      text-decoration: underline
 
 .article-tag-list-item
   float: left

@@ -2,6 +2,7 @@
   height: 100%
   position: relative
   background-color: color-link
+  // BoxShadowHelper4()
 
 #header-inner
   position: relative
@@ -18,14 +19,15 @@ $logo-text
   text-decoration: none
   color: color-white
   font-weight: 300
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+  // text-shadow: 15px 15px 25px rgba(0, 0, 0, 0.3), 2px 3px 10px rgba(0, 0, 0, 0.3)
+  TextShadowHelper3()
 
 #logo
   @extend $logo-text
   transition: color 0.2s
   font-size: logo-size
   line-height: 1.4em
-  // font-weight: bold
+  font-weight: bold
   // letter-spacing: 2px
 
 
@@ -36,7 +38,9 @@ $logo-text
   letter-spacing: 1px
 
 #header-title a:hover
-  color: color-link
+  color: color-secondary
+  transform: translateY(-5px);
+  TextShadowHelper4()
 
 #subtitle-wrap
   padding-top: subtitle-size
@@ -59,7 +63,7 @@ $nav-link
 
 .nav-icon
   @extend $nav-link
-  @extend $text-shadow
+  TextShadowHelper2()
   font-family: font-icon
   text-align: center
   font-size: logo-size - 4
@@ -71,7 +75,8 @@ $nav-link
   &:first-child
     padding-left: 0
   &:hover
-    color: color-link
+    color: color-secondary
+    TextShadowHelper3()
 
 .main-nav-link
   @extend $nav-link
