@@ -1,7 +1,8 @@
 title: devtings
+date: 2014-06-01 00:00:00
 tags:
 - devtings
-- development
+- Development
 ---
 
 ### who wants to talk about development stuff?

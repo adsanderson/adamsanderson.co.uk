@@ -1,7 +1,7 @@
 title: A Question About Module Dependencies
 date: 2014-08-30 19:25:00
 tags:
-- development
+- Web Development
 - JavaScipt
 ---
 After writing some custom Grunt tasks, and getting my feet wet with node, then following this up with some work using [browserify][1]. I had a feeling there would be a trend in front-end development for micro libraries (in the style of node) on the horizon.
