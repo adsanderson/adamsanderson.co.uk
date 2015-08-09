@@ -20,11 +20,11 @@ $logo-text
   color: color-white
   font-weight: 300
   // text-shadow: 15px 15px 25px rgba(0, 0, 0, 0.3), 2px 3px 10px rgba(0, 0, 0, 0.3)
+  linkTransition()
   TextShadowHelper3()
 
 #logo
   @extend $logo-text
-  transition: color 0.2s
   font-size: logo-size
   line-height: 1.4em
   font-weight: bold
@@ -39,7 +39,7 @@ $logo-text
 
 #header-title a:hover
   color: color-secondary
-  transform: translateY(-5px);
+  // transform: translateY(-5px);
   TextShadowHelper4()
 
 #subtitle-wrap
@@ -55,7 +55,7 @@ $nav-link
   // opacity: 0.6
   text-decoration: none
   // text-shadow: 0 1px rgba(0, 0, 0, 0.2)
-  transition: color 0.2s
+  linkTransition()
   display: block
   padding: 20px 15px
   // &:hover
@@ -69,11 +69,12 @@ $nav-link
   font-size: logo-size - 4
   width: logo-size - 4
   height: logo-size - 4
-  padding: 20px (logo-size - 4) 5%
+  margin: 20px (logo-size - 4) 5%
+  padding: 0
   position: relative
   cursor: pointer
   &:first-child
-    padding-left: 0
+    margin-left: 0
   &:hover
     color: color-secondary
     TextShadowHelper3()
