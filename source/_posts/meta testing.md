@@ -19,12 +19,10 @@ To get started the initial output will be the values from the input array that a
 
 The initial temptation with unit testing is to be as explicit as possible. Inputting [1, 2, 3] should give us exactly "1|2|3".
 
-#### Test A: 
-
-``` 
+{% codeblock Test A lang:Javascript%}
 var value = createChecksum([1, 2, 3]);
 expect(value).to.be.equal("1|2|3");
-```
+{% endcodeblock %}
 
 Our function runs, our test passes, everyone sleeps well that night. Until we realise that we need to change our output.
 
@@ -36,23 +34,19 @@ So that is where are tests should lead us: Do identical inputs give identical re
 
 Here is the first test to see if the checksums are consistent:
 
-#### Test B:
-
-``` 
+{% codeblock Test B lang:Javascript %}
 var value = createChecksum([1, 2, 3]);
 var matchingValue = createChecksum([1, 2, 3]);
 expect(value).to.be.equal(matchingValue);
-```
+{% endcodeblock %}
 
 And the second test to see if different inputs give us different results:
 
-#### Test C:
-
-``` 
+{% codeblock Test C lang:Javascript %}
 var value = createChecksum([1, 2, 3]);
 var differentValue = createChecksum([test, test, test]);
 expect(value).to.not.be.equal(differentValue);
-```
+{% endcodeblock %}
 
 ### Change the output, keep the behaviour 
 
