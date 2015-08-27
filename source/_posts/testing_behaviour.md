@@ -1,11 +1,9 @@
-title: Testing behaviour and why I like it
+title: A quick look at testing behaviour
 date: 2015-08-12 00:00:00
 tags:
 - Development
 - TDD
 ---
-
-### Intro
 
 One of my favourite concepts of testing is the idea of testing behaviour over the implementation. And for this I think it's easiest to explain by diving into an example. 
 
