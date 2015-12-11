@@ -12,6 +12,7 @@ deploy:
   bucket: testing-gzip.adamsanderson.co.uk
   region: eu-west-1
   local-dir: public
+  skip_cleanup: true
   acl: public_read
   on:
     repo: adsanderson/adamsanderson.co.uk
