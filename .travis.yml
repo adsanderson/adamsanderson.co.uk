@@ -14,5 +14,6 @@ deploy:
   local-dir: public
   skip_cleanup: true
   acl: public_read
+  detect_encoding: true
   on:
     repo: adsanderson/adamsanderson.co.uk
