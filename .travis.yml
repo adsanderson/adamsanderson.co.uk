@@ -3,6 +3,7 @@ node_js:
 - '4.1'
 before_script:
 - npm install -g hexo-cli
+- npm install hexo-filter-gzip --save
 script: hexo generate
 deploy:
   provider: s3
