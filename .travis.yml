@@ -15,10 +15,10 @@ deploy:
     skip_cleanup: true
     acl: public_read
     detect_encoding: true
-    branch: master
     bucket: adamsanderson.co.uk
     on:
       repo: adsanderson/adamsanderson.co.uk
+      branch: master
   - provider: s3
     access_key_id: AKIAIETWHIH2VYDEX4KQ
     secret_access_key:
@@ -28,9 +28,9 @@ deploy:
     skip_cleanup: true
     acl: public_read
     detect_encoding: true
-    branches:
-      except:
-        - master
     bucket: testing-gzip.adamsanderson.co.uk
     on:
       repo: adsanderson/adamsanderson.co.uk
+      branches:
+        except:
+          - master
