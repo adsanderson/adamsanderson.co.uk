@@ -15,7 +15,7 @@ rss: /atom.xml
 # - recent_posts
 
 # Miscellaneous
-# google_analytics:
+google_analytics: UA-1951739-9
 # favicon: /favicon.png
 # twitter:
 # google_plus:
