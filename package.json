@@ -19,5 +19,9 @@
     "hexo-server": "^0.1.2",
     "lodash": "^3.10.1",
     "marked": "^0.3.2"
+  },
+  "devDependencies": {
+    "markdown-it": "^6.0.0",
+    "minimatch": "^3.0.0"
   }
 }
