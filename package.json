@@ -21,7 +21,7 @@
     "marked": "^0.3.2"
   },
   "devDependencies": {
-    "markdown-it": "^6.0.0",
-    "minimatch": "^3.0.0"
+    "glob": "^7.0.0",
+    "markdown-to-ast": "^3.2.3"
   }
 }
