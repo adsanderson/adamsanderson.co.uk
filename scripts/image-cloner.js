@@ -7,6 +7,31 @@ var request = require("request");
 var path = require("path");
 var url = require("url");
 
+function createLocations () {
+    
+    const SOURCE = 'source';
+    const IMAGELOCATION = 'images';
+    
+    function postname(filename) {
+        return path.basename(filename, '.md');
+    }
+    
+    function fullPath (filename) {
+        return path.resolve(SOURCE, IMAGELOCATION, postname(filename));
+    }
+    
+    function live (filename) {
+        return path.join('/', IMAGELOCATION, postname(filename));
+    }
+
+    return {
+        fullPath: fullPath,
+        live: live
+    }
+}
+
+let location = createLocations();
+
 function isExternalIamge (node) {
     if(node.type === 'Image' && node.url.indexOf('http') !== -1) {
         return true;
@@ -27,10 +52,10 @@ function findExternalImages (arr) {
     }, []);
 }
 
-function processResult (imageNode, postdir, currentPost) {
+function processResult (imageNode, filename, currentPost) {
     return new Promise((resolve) => {
-        getExternalImage(imageNode, postdir)
-        .then(updateMarkdown.bind(null, currentPost, imageNode))
+        getExternalImage(imageNode, filename)
+        .then(updateMarkdown.bind(null, currentPost, imageNode, filename))
         .then((updatedPost) => {
             resolve(updatedPost);
         })
@@ -38,30 +63,26 @@ function processResult (imageNode, postdir, currentPost) {
     });
 }
 
-function process (externalImageNodes, markdownRaw, postdir) {
+function process (externalImageNodes, initialPost, filename) {
     return externalImageNodes.reduce(function(promise, imageNode) {
         return promise.then(function(updatedPost) {
-            return processResult(imageNode, postdir, updatedPost);
+            return processResult(imageNode, filename, updatedPost);
         });        
-    }, Promise.resolve(markdownRaw));
+    }, Promise.resolve(initialPost));
 }
 
-function mkdirForPost (postname) {
+function mkdirForPost (filename) {
     return new Promise ((resolve) => {
-        let postdir = path.resolve('source/images/', path.basename(postname, '.md'));
-        fs.mkdir(postdir, () => {
-            console.log(arguments);
-            resolve(postdir);
+        fs.mkdir(location.fullPath(filename), () => {
+            resolve();
         });
     });
 }
 
-function getExternalImage (node, postdir) {
+function getExternalImage (node, filename) {
     return new Promise((resolve, reject) => {
         let imagename = path.basename(url.parse(node.url).pathname);
-        let imagePath = path.resolve(postdir, imagename); 
-        
-        console.log(imagePath);
+        let imagePath = path.resolve(location.fullPath(filename), imagename); 
         
         request(node.url)
         .pipe(fs.createWriteStream(imagePath))
@@ -71,13 +92,13 @@ function getExternalImage (node, postdir) {
         })
         .on('error', (err) => {
             reject();
-           console.log(err); 
+           console.log('request image error', err); 
         });
     });
 }
 
-function updateMarkdown (markdownRaw, imageNode, newImageLocation) {
-    let template = `![${imageNode.alt}](${newImageLocation})`;
+function updateMarkdown (markdownRaw, imageNode, filename) {
+    let template = `![${imageNode.alt}](${location.live(filename)})`;
     let newMarkdown = `${markdownRaw.slice(0, imageNode.range[0])}${template}${markdownRaw.slice(imageNode.range[1])}`;
     
     return newMarkdown;
@@ -95,13 +116,13 @@ glob("source/**/*.md", {}, function (er, files) {
         
         if (externalImageNodes.length > 0) {
             return mkdirForPost(filename)
-            .then(process.bind(null, externalImageNodes, markdownRaw))
+            .then(process.bind(null, externalImageNodes, markdownRaw, filename))
             .then(writeNewMarkdown.bind(null, filename))
             .catch((err) => console.error(err));
         }
         return Promise.resolve();
     }))
     .then(() => {
-        console.log('done');
+        console.info('done');
     });
 });
