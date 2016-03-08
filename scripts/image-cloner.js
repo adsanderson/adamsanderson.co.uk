@@ -32,6 +32,11 @@ function createLocations () {
 
 let location = createLocations();
 
+function getImagePath(locationPath, imageNode) {
+    let imagename = path.basename(url.parse(imageNode.url).pathname);
+    return path.resolve(locationPath, imagename); 
+}
+
 function isExternalIamge (node) {
     if(node.type === 'Image' && node.url.indexOf('http') !== -1) {
         return true;
@@ -81,8 +86,8 @@ function mkdirForPost (filename) {
 
 function getExternalImage (node, filename) {
     return new Promise((resolve, reject) => {
-        let imagename = path.basename(url.parse(node.url).pathname);
-        let imagePath = path.resolve(location.fullPath(filename), imagename); 
+        
+        let imagePath = getImagePath(location.fullPath(filename), node); 
         
         request(node.url)
         .pipe(fs.createWriteStream(imagePath))
@@ -98,7 +103,10 @@ function getExternalImage (node, filename) {
 }
 
 function updateMarkdown (markdownRaw, imageNode, filename) {
-    let template = `![${imageNode.alt}](${location.live(filename)})`;
+    
+    let imagePath = getImagePath(location.live(filename), imageNode); 
+    
+    let template = `![${imageNode.alt}](${imagePath})`;
     let newMarkdown = `${markdownRaw.slice(0, imageNode.range[0])}${template}${markdownRaw.slice(imageNode.range[1])}`;
     
     return newMarkdown;
