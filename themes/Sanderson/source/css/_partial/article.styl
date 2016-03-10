@@ -66,6 +66,9 @@
     text-decoration: none
     &:hover
       text-decoration: underline
+  // a[href*="//"]:not([href*="adamsanderson.co.uk"]) 
+  //   &:after
+  //     content "x"
   ul, ol, dl
     margin-top: line-height
     margin-bottom: line-height
@@ -88,10 +91,16 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    font-family: font-serif
-    font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
+    //font-family: font-sans
+    font-size: 1.2rem
+    margin: line-height
+    border-left: 5px solid color-secondary
+    //background-color: lightness(color-secondary, 95)
+    color: color-grey
+    padding-top: line-height;
+    p
+      margin-left: line-height;
+      margin-top: 0
     footer
       font-size: font-size
       margin: line-height 0
