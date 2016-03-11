@@ -1,19 +1,5 @@
-#header-outer
-  height: 100%
-  position: relative
+.header
   background-color: color-link
-  // BoxShadowHelper4()
-
-#header-inner
-  position: relative
-  overflow: hidden
-  nav
-    margin-left: 3%
-
-#header-title
-  padding-top: 5%;
-  margin-left: 3%
-  width: 0
 
 $logo-text
   text-decoration: none
@@ -22,64 +8,63 @@ $logo-text
   linkTransition()
   TextShadowHelper3()
 
-#logo
+.logo
   @extend $logo-text
   font-size: logo-size
   line-height: 1.4em
   font-weight: bold
-  // letter-spacing: 2px
-
-
-#subtitle
-  @extend $logo-text
-  font-size: subtitle-size
-  line-height: subtitle-size
-  letter-spacing: 1px
-
-#header-title a:hover
-  color: color-secondary
-  // transform: translateY(-5px);
-  TextShadowHelper4()
-
-#subtitle-wrap
-  padding-top: subtitle-size
-
-#main-nav
-  // float: left
-  // margin-left: 3%
-
-.header-img
-  border-radius: 0.2em
-  margin: 20px 0 0 0
+  display: flex
+  align-items: center
+  max-width: 670px
+  margin: 0 auto;
+  
+.logo--title
+  flex: 3
+  fill: color-white
+  transition: fill 0.2s, text-shadow 0.5s
+  align-self: flex-end
+  &:hover
+    fill: color-secondary
+    TextShadowHelper4()
+  
+.logo--img
+  flex: 1
+  align-self: flex-start
+  margin-right: 1.2rem
   BoxShadowHelper3()
-
-
+  
+.nav
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 0 0
+  padding: 0 0 20px 0
+  
 $nav-link
-  float: left
-  color: #fff
-  // opacity: 0.6
-  text-decoration: none
-  // text-shadow: 0 1px rgba(0, 0, 0, 0.2)
-  linkTransition()
-  display: block
-  padding: 20px 15px
-  // &:hover
-  //   opacity: 1
+//   float: left
+//   color: #fff
+//   // opacity: 0.6
+//   text-decoration: none
+//   // text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+//   linkTransition()
+//   display: block
+//   padding: 20px 15px
+//   // &:hover
+//   //   opacity: 1
 
-.nav-icon
-  @extend $nav-link
+.nav--icon
+  linkTransition()
   TextShadowHelper2()
+  color: color-white
+  text-decoration: none
   font-family: font-icon
   text-align: center
   font-size: logo-size - 1
-  // width: logo-size - 4
-  // height: logo-size - 4
-  margin: 20px (subtitle-spacing - 4) 5%
+  margin: 0 10px
   padding: 0
-  position: relative
   cursor: pointer
-  &:first-child
-    margin-left: 0
+  flex: 1
+  // &:first-child
+  //   margin-left: 0
   &:hover
     color: color-secondary
     TextShadowHelper3()
