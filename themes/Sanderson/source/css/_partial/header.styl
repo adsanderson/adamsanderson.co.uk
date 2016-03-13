@@ -14,23 +14,25 @@ $logo-text
   line-height: 1.4em
   font-weight: bold
   display: flex
+  flex-wrap: wrap
   align-items: center
   max-width: 670px
   margin: 0 auto;
   
 .logo--title
-  flex: 3
+  flex: 3 3 30%
   fill: color-white
   transition: fill 0.2s, text-shadow 0.5s
   align-self: flex-end
+  margin: 0 1.2rem
   &:hover
     fill: color-secondary
     TextShadowHelper4()
   
 .logo--img
-  flex: 1
+  flex: 0 1
   align-self: flex-start
-  margin-right: 1.2rem
+  margin: 0 0 0 1.2rem
   BoxShadowHelper3()
   
 .nav
@@ -39,18 +41,6 @@ $logo-text
   margin: 20px 0 0 0
   padding: 0 0 20px 0
   
-$nav-link
-//   float: left
-//   color: #fff
-//   // opacity: 0.6
-//   text-decoration: none
-//   // text-shadow: 0 1px rgba(0, 0, 0, 0.2)
-//   linkTransition()
-//   display: block
-//   padding: 20px 15px
-//   // &:hover
-//   //   opacity: 1
-
 .nav--icon
   linkTransition()
   TextShadowHelper2()
@@ -69,94 +59,22 @@ $nav-link
     color: color-secondary
     TextShadowHelper3()
 
-.main-nav-link
-  @extend $nav-link
-  font-weight: 300
-  letter-spacing: 1px
-  @media mq-mobile
-    display: none
-
-#main-nav-toggle
-  display: none
-  &:before
-    content: "\f0c9"
-  @media mq-mobile
-    display: block
-
-#sub-nav
-  float: right
-  margin-right: -15px
-
-.nav-archive
+.nav--archive
   &:before
     content: "\f187"
 
-#nav-rss-link
+.nav--rss
   &:before
     content: "\f143"
 
-#nav-search-btn
-  &:before
-    content: "\f002"
-
-.nav-github
+.nav--github
   &:before
     content: "\f092"
 
-.nav-twitter
+.nav--twitter
   &:before
     content: "\f081"
 
-.nav-linkedin
+.nav--linkedin
   &:before
     content: "\f08c"
-
-
-#search-form-wrap
-  position: absolute
-  top: 15px
-  width: 150px
-  height: 30px
-  right: -150px
-  opacity: 0
-  transition: 0.2s ease-out
-  &.on
-    opacity: 1
-    right: 0
-  @media mq-mobile
-    width: 100%
-    right: -100%
-
-.search-form
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  background: #fff
-  padding: 5px 15px
-  border-radius: 15px
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
-
-.search-form-input
-  border: none
-  background: none
-  color: color-default
-  width: 100%
-  font: 13px font-sans
-  outline: none
-  &::-webkit-search-results-decoration
-  &::-webkit-search-cancel-button
-    -webkit-appearance: none
-
-.search-form-submit
-  position: absolute
-  top: 50%
-  right: 10px
-  margin-top: -7px
-  font: 13px font-icon
-  border: none
-  background: none
-  color: #bbb
-  cursor: pointer
-  &:hover, &:focus
-    color: #777
