@@ -1,5 +1,6 @@
 
 title: How I keep up
+date: 2016-02-23T00:00:00
 ---
 This is how I try and keep up to speed with the ever changing landscape of modern web development. There is a lot of information on the web about the web and people are adding to it all the time and to keep up can be daunting and tiring. At the same time that constant change and learning is part of what I find fun and interesting about working in this medium.
 
