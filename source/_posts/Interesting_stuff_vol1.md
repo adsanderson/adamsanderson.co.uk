@@ -1,5 +1,10 @@
 title: Interesting stuff vol1
-Date: 2016-02-24T00:00:00
+date: 2016-02-24T00:00:00
+tag:
+- links
+- CSS
+- UX
+
 ---
 
 Here is the first set of interesting links, no real theme or trends this time. But after reading this selection, I have found new and better questions in my head when developing.  
