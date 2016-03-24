@@ -56,8 +56,6 @@ Next two articles on React, first testing using Enzyme. Then the introduction of
 
 > React will soon support the full range of SVG elements and attributes. 
 
-> !["React will soon support the full range of SVG elements and attributes. https](/images/interesting_things_vol_2/no_image_card.png) 
-
 A deep dive into the loading performance of [m.imgur.com](m.imgur.com). A great insight into the tools and techniques of auditing the performance of any website. 
  
 ### [perfs/audits - [m.imgur.com] page load performance](https://github.com/perfs/audits/issues/1) 
