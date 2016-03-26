@@ -26,16 +26,12 @@ html, body, #container
   height: 100%
 
 body
-  // background: url(banner-url) center fixed
   font: font-size font-sans
   -webkit-text-size-adjust: 100%
 
 .outer
   clearfix()
-  // max-width: (column-width + gutter-width) * columns + gutter-width
-  // margin: 0 auto
-  // padding: 0 gutter-width
-
+  
 .inner
   // column(columns)
 
@@ -62,28 +58,13 @@ body
   left: 0
   transition: 0.2s ease-out
   z-index: 1
-  // background: color-background
   .mobile-nav-on &
     left: mobile-nav-width
 
-if sidebar and sidebar isnt bottom
-  #main
-    @media mq-normal
-      column(main-column)
-
-if sidebar is left
-  @media mq-normal
-    #main
-      float: right
 
 @import "_extend"
 @import "_partial/header"
 @import "_partial/article"
-@import "_partial/comment"
 @import "_partial/archive"
 @import "_partial/footer"
 @import "_partial/highlight"
-@import "_partial/mobile"
-
-if sidebar
-  @import "_partial/sidebar"
