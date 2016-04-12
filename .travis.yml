@@ -4,6 +4,7 @@ node_js:
 before_script:
 - npm install -g hexo-cli
 - npm install hexo-filter-gzip --save
+- npm run getInteresting
 script: hexo generate
 deploy:
   - provider: s3
