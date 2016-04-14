@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "hexo": "^3.1.1",
-    "hexo-command-gzip": "0.0.1",
     "hexo-filter-critical": "adsanderson/hexo-filter-critical",
     "hexo-generator-archive": "^0.1.2",
     "hexo-generator-category": "^0.1.2",
