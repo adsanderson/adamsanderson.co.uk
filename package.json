@@ -14,13 +14,13 @@
     "hexo-generator-archive": "^0.1.2",
     "hexo-generator-category": "^0.1.2",
     "hexo-generator-feed": "^1.0.2",
-    "hexo-generator-index": "^0.1.2",
-    "hexo-generator-tag": "^0.1.1",
+    "hexo-generator-index": "^0.2.0",
+    "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "*",
     "hexo-renderer-marked": "*",
     "hexo-renderer-stylus": "*",
-    "hexo-server": "^0.1.2",
-    "lodash": "^3.10.1",
+    "hexo-server": "^0.2.0",
+    "lodash": "^4.11.1",
     "marked": "^0.3.2"
   },
   "devDependencies": {
