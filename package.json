@@ -2,7 +2,7 @@
   "name": "adamsanderson.co.uk",
   "version": "3.0.0",
   "scripts": {
-    "getInteresting": "node scripts/getInterestingThings done && echo 'got Interesting'",
+    "getInteresting": "node _scripts/getInterestingThings done && echo 'got Interesting'",
     "serve": "hexo server -p $PORT -i $IP"
   },
   "hexo": {
