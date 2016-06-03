@@ -18,33 +18,34 @@ $logo-text
   align-items: center
   max-width: 670px
   margin: 0 auto;
-  
+
 .logo--title
   flex: 3 3 30%
   fill: color-white
   transition: fill 0.2s, text-shadow 0.5s
   align-self: flex-end
   margin: 0 1.2rem
+  max-height: 200px
   &:hover
     fill: color-secondary
     TextShadowHelper4()
-  
+
 .logo--img
   flex: 0 1
   align-self: flex-start
   margin: 0 0 0 1.2rem
   BoxShadowHelper3()
-  
+
 .nav
   display: flex;
   flex-wrap: wrap;
   margin: 20px 0 0 0
   padding: 0 0 20px 0
-  
+
 .nav--icon
   linkTransition()
   TextShadowHelper2()
-  color: color-white
+  fill: color-white
   text-decoration: none
   font-family: font-icon
   text-align: center
@@ -53,28 +54,12 @@ $logo-text
   padding: 0
   cursor: pointer
   flex: 1
+  max-height: 48px
   // &:first-child
   //   margin-left: 0
+  svg
+    height: 48px
+    width: 48px
   &:hover
-    color: color-secondary
+    fill: color-secondary
     TextShadowHelper3()
-
-.nav--archive
-  &:before
-    content: "\f187"
-
-.nav--rss
-  &:before
-    content: "\f143"
-
-.nav--github
-  &:before
-    content: "\f092"
-
-.nav--twitter
-  &:before
-    content: "\f081"
-
-.nav--linkedin
-  &:before
-    content: "\f08c"
