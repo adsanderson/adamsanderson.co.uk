@@ -5,7 +5,9 @@ before_script:
 - npm install -g hexo-cli
 - npm install hexo-filter-gzip --save
 - npm run getInteresting
-script: hexo generate && percy snapshot public/ --snapshot_limit 1
+script:
+- hexo generate
+- percy snapshot public/ --snapshot_limit 1
 deploy:
   - provider: s3
     access_key_id: AKIAIETWHIH2VYDEX4KQ
