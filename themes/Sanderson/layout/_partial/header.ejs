@@ -6,12 +6,22 @@
     </a>
   </h1>
   <nav id="nav" class="nav">
-    <a href="/archives" class="nav--icon nav--archive" title="Archives"></a>
+    <a href="/archives" class="nav--icon" title="Archives">
+      <%- include ../../source/svgs/archive.svg %>
+    </a>
     <% if (theme.rss){ %>
-      <a id="nav-rss-link" class="nav--icon nav--rss" href="<%- theme.rss %>" title="RSS Feed" title="Subscribe"></a>
+      <a id="nav-rss-link" class="nav--icon" href="<%- theme.rss %>" title="RSS Feed" title="Subscribe">
+        <%- include ../../source/svgs/feed.svg %>
+      </a>
     <% } %>
-    <a href="https://github.com/adsanderson" class="nav--icon nav--github" title="Github"></a>
-    <a href="https://twitter.com/lazydayed" class="nav--icon nav--twitter" title="Twitter"></a>
-    <a href="https://uk.linkedin.com/in/adamdamiensanderson" class="nav--icon nav--linkedin" title="LinkedIn"></a>
+    <a href="https://github.com/adsanderson" class="nav--icon" title="Github">
+      <%- include ../../source/svgs/github-alt.svg %>
+    </a>
+    <a href="https://twitter.com/lazydayed" class="nav--icon" title="Twitter">
+      <%- include ../../source/svgs/twitter.svg %>
+    </a>
+    <a href="https://uk.linkedin.com/in/adamdamiensanderson" class="nav--icon" title="LinkedIn">
+      <%- include ../../source/svgs/linkedin.svg %>
+    </a>
   </nav>
 </header>
