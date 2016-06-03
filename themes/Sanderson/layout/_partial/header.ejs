@@ -1,17 +1,30 @@
 <header id="header" class="header">
   <h1 id="logo-wrap">
     <a href="<%- url_for() %>" id="logo" class="logo">
-      <img src="<%- gravatar('adam@adamsanderson.co.uk', 200) %>" class="logo--img">
+      <img src="<%- gravatar('adam@adamsanderson.co.uk', 200) %>" class="logo--img" alt="Adam Sanderon">
       <svg xmlns="http://www.w3.org/2000/svg" class="logo--title" viewBox="0 0 110 50"><text stroke-miterlimit="3" font-size="22"><tspan x="0" y="22">Adam</tspan><tspan x="0" y="47">Sanderson</tspan></text></svg>
     </a>
   </h1>
   <nav id="nav" class="nav">
-    <a href="/archives" class="nav--icon nav--archive" title="Archives"></a>
+    <a href="/archives" class="nav--icon" title="Archives">
+      <%- include ../../source/svgs/archive.svg %>
+    </a>
     <% if (theme.rss){ %>
-      <a id="nav-rss-link" class="nav--icon nav--rss" href="<%- theme.rss %>" title="RSS Feed" title="Subscribe"></a>
+      <a id="nav-rss-link" class="nav--icon" href="<%- theme.rss %>" title="RSS Feed" title="Subscribe">
+        <%- include ../../source/svgs/feed.svg %>
+      </a>
     <% } %>
-    <a href="https://github.com/adsanderson" class="nav--icon nav--github" title="Github"></a>
-    <a href="https://twitter.com/lazydayed" class="nav--icon nav--twitter" title="Twitter"></a>
-    <a href="https://uk.linkedin.com/in/adamdamiensanderson" class="nav--icon nav--linkedin" title="LinkedIn"></a>
+    <a href="https://github.com/adsanderson" class="nav--icon" title="Github">
+      <%- include ../../source/svgs/github-alt.svg %>
+    </a>
+    <a href="https://twitter.com/lazydayed" class="nav--icon" title="Twitter">
+      <%- include ../../source/svgs/twitter.svg %>
+    </a>
+    <a href="https://uk.linkedin.com/in/adamdamiensanderson" class="nav--icon" title="LinkedIn">
+      <%- include ../../source/svgs/linkedin.svg %>
+    </a>
+    <a href="/reading-list" class="nav--icon" title="Reading list">
+      <%- include ../../source/svgs/bookmark.svg %>
+    </a>
   </nav>
 </header>
