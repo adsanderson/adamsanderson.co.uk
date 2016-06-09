@@ -14,7 +14,7 @@ I've add [critical](https://github.com/addyosmani/critical) into this blogs buil
 
 The problem was I was getting a pop-in with the css, un-styled content at the bottom of the screen. This felt like a step back from loading the full stylesheet.
 
-![The loading timeline with pop-in](images/popin-timeline.png)
+![The loading timeline with pop-in](/images/popin-timeline.png)
 
 ### The debug process
 
@@ -32,7 +32,7 @@ The next step was to see what was being generated inside of critical to get this
 
 The results were surprising.
 
-![Large orange page](images/zoomed-out.png)
+![Large orange page](/images/zoomed-out.png)
 
 I wanted the text in the heading to be responsive. The problem is without bounds that heading SVG got **BIG**. The above screenshot is `10000px` high, so with that critical was getting all of the above the fold content.
 
@@ -40,6 +40,6 @@ I wanted the text in the heading to be responsive. The problem is without bounds
 
 I added bounds, simply set the `max-height` for the SVG's container element and re-ran the generation to get this.
 
-![the working phantom render](images/the-working-generation.png)
+![the working phantom render](/images/the-working-generation.png)
 
 So now the page loads the critical CSS inline then the rest of the page loads. Without any visible pop-in.
