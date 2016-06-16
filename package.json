@@ -4,7 +4,7 @@
   "scripts": {
     "getInteresting": "node _scripts/getInterestingThings done && echo 'got Interesting'",
     "serve": "hexo server -p $PORT -i $IP",
-    "test": "tape _test/*.test.js"
+    "test": "phantomjs _test/*.test.js"
   },
   "hexo": {
     "version": "3.2.0"
