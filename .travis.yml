@@ -1,11 +1,15 @@
 language: node_js
 node_js:
 - '5.5'
-before_script:
+install:
 - npm install -g hexo-cli
 - npm install hexo-filter-gzip --save
+before_script:
 - npm run getInteresting
-script: hexo generate
+script:
+- hexo generate
+- hexo server -s
+- npm test
 deploy:
   - provider: s3
     access_key_id: AKIAIETWHIH2VYDEX4KQ
