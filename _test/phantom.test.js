@@ -1,5 +1,7 @@
 console.log('test test test');
 
+phantom.exit(0);
+
 // var page = require('webpage').create();
 
 // page.viewportSize = {

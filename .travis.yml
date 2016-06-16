@@ -7,10 +7,10 @@ install:
 - npm install hexo-filter-gzip --save
 before_script:
 - npm run getInteresting
-script:
 - hexo generate
 - hexo server -s
-- npm test
+script: npm test
+
 deploy:
   - provider: s3
     access_key_id: AKIAIETWHIH2VYDEX4KQ
