@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "scripts": {
     "getInteresting": "node _scripts/getInterestingThings done && echo 'got Interesting'",
-    "serve": "hexo server -p $PORT -i $IP"
+    "serve": "hexo server -p $PORT -i $IP",
+    "test": "tape _test/*.test.js"
   },
   "hexo": {
     "version": "3.2.0"
   },
   "dependencies": {
     "hexo": "^3.1.1",
-    "hexo-filter-critical": "adsanderson/hexo-filter-critical",
     "hexo-generator-archive": "^0.1.2",
     "hexo-generator-category": "^0.1.2",
     "hexo-generator-feed": "^1.0.2",
@@ -25,6 +25,7 @@
   "devDependencies": {
     "glob": "^7.0.0",
     "markdown-to-ast": "^3.2.3",
-    "request": "^2.69.0"
+    "request": "^2.69.0",
+    "tape": "^4.5.1"
   }
 }
