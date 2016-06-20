@@ -1,6 +1,16 @@
+const server = require('./fixtures/server');
+
 console.log('test test test');
 
-phantom.exit(0);
+server.listen(() => {
+  // setTimeout(() => {
+  //   console.log('timeout')
+  //   server.cancel();
+  // }, 1000);
+});
+
+
+// phantom.exit(0);
 
 // var page = require('webpage').create();
 
