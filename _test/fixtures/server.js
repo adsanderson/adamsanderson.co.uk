@@ -23,5 +23,5 @@ function cancel () {
 
 module.exports = {
     listen: listen,
-    cancel: cancel
+    close: cancel
 };

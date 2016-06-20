@@ -3,7 +3,7 @@
     <%- partial('article', {post: post, index: true}) %>
   <% }) %>
   <% if (page.total > 1){ %>
-    <nav class="page-nav">
+    <nav class="page-nav" role="menu" aria-label="Pagination">
       <%- paginator({
         prev_text: '&laquo; Prev',
         next_text: 'Next &raquo;'
