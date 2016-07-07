@@ -7,7 +7,7 @@
     "test": "phantomjs _test/*.test.js"
   },
   "hexo": {
-    "version": "3.2.0"
+    "version": "3.2.2"
   },
   "dependencies": {
     "hexo": "^3.1.1",
@@ -18,7 +18,7 @@
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.2.0",
-    "hexo-renderer-marked": "^0.2.10",
+    "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "lodash": "^4.11.2"
