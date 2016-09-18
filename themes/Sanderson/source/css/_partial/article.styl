@@ -3,7 +3,7 @@
   overflow: hidden
   margin-bottom: 80px;
 
-.article-meta
+.article--meta
   clearfix()
   color: color-white
 
@@ -37,7 +37,6 @@
   font-size: 2em
   font-weight: bold
   color: color-white
-  line-height: line-height-title
   linkTransition()
   TextShadowHelper1()
   a&:hover
@@ -59,13 +58,15 @@
     color: color-head-text
     font-weight: bold
   h1, h2, h3, h4, h5, h6
-    line-height: line-height-title
     margin: line-height-title 0
   a
     color: color-link
     text-decoration: none
     &:hover
       text-decoration: underline
+  // a[href*="//"]:not([href*="adamsanderson.co.uk"])
+  //   &:after
+  //     content "x"
   ul, ol, dl
     margin-top: line-height
     margin-bottom: line-height
@@ -88,10 +89,16 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    font-family: font-serif
-    font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
+    //font-family: font-sans
+    font-size: 1.2rem
+    margin: line-height
+    border-left: 5px solid color-secondary
+    //background-color: lightness(color-secondary, 95)
+    color: color-grey
+    padding-top: line-height;
+    p
+      margin-left: line-height;
+      margin-top: 0
     footer
       font-size: font-size
       margin: line-height 0
@@ -168,33 +175,39 @@
   height: 26px;
   border-color: white
   border-style: solid
+  transform: skew(-10deg)
+  transition: transform 100ms
   &:nth-child(3n+1)
     background-color: color-primary
   &:nth-child(3n+2)
     background-color: color-link
   &:nth-child(3n+3)
     background-color: color-secondary
-  &::before
-    content: ""
-    font-size: 0
-    border: 27px solid white
-    border-bottom-color: transparent
-    border-right-color: transparent
-    border-left-width: 10px
-    border-right-width: 10px
-  &:after
-    content: ""
-    font-size: 0
-    border: 27px solid white
-    border-top-color: transparent
-    border-left-color: transparent
-    border-left-width: 10px
-    border-right-width: 10px
+  &:hover
+    transform: skew(0) scale(1.1)
+  // &::before
+  //   content: ""
+  //   font-size: 0
+  //   border: 27px solid white
+  //   border-bottom-color: transparent
+  //   border-right-color: transparent
+  //   border-left-width: 10px
+  //   border-right-width: 10px
+  // &:after
+  //   content: ""
+  //   font-size: 0
+  //   border: 27px solid white
+  //   border-top-color: transparent
+  //   border-left-color: transparent
+  //   border-left-width: 10px
+  //   border-right-width: 10px
 
 .article-tag-list-link
   padding: 0 6px
   &:before
     content: "#"
+
+
 
 .article-comment-link
   float: right
@@ -361,36 +374,3 @@ $article-share-link
     display: block
     max-width: 100%
     margin: 0 auto
-/*
-$article-gallery-ctrl
-  position: absolute
-  top: 0
-  height: 100%
-  width: 60px
-  color: #fff
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
-  opacity: 0.3
-  transition: opacity 0.2s
-  cursor: pointer
-  &:hover
-    opacity: 0.8
-  &:before
-    font-size: 30px
-    font-family: font-icon
-    position: absolute
-    top: 50%
-    margin-top: @font-size * -0.5
-
-.article-gallery-prev
-  @extend $article-gallery-ctrl
-  left: 0
-  &:before
-    content: "\f053"
-    left: 15px
-
-.article-gallery-next
-  @extend $article-gallery-ctrl
-  right: 0
-  &:before
-    content: "\f054"
-    right: 15px*/
