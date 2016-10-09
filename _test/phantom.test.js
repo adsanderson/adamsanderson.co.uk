@@ -1,3 +1,6 @@
+console.log('test test test');
+
+// phantom.exit(0);
 const server = require('./fixtures/server');
 
 console.log('test test test');
