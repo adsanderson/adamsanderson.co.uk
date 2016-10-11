@@ -8,7 +8,6 @@ install:
 before_script:
 - npm run getInteresting
 - hexo generate
-script: npm test
 
 deploy:
   - provider: s3
