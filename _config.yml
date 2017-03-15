@@ -57,8 +57,8 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 3
-pagination_dir: page
+# per_page: 3
+# pagination_dir: page
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
