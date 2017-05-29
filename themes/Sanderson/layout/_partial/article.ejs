@@ -1,9 +1,9 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
-      <header class="article-header">
-        <div class="article-header-inner">
-          <%- partial('post/title', {class_name: 'article-title'}) %>
+      <header class="title__container">
+        <div class="title__layout">
+          <%- partial('post/title', {class_name: 'title__content'}) %>
           <div class="article--meta">
             <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
           </div>

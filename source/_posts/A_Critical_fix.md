@@ -3,7 +3,7 @@ date: 2016-06-08T00:00:00
 tags:
 - Web development
 - SVG
-
+subtitle:  How I used critcal path CSS to help speed up loading
 ---
 
 A look into how I fixed an issue with a less than optimal optimisation, or how I got critical, phantomjs, SVGs and responsiveness to play together.
