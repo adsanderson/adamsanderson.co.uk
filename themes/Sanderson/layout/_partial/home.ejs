@@ -1,0 +1,27 @@
+<ul>
+<% page.posts.each(function(post){ %>
+  <li class="home__item">
+    <div class="title__container">
+      <div class="title__layout">
+        <h1>
+          <a class="title__content title__link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+        </h1>
+
+      </div>
+    </div>
+    <div class="article__layout">
+      <% if (post.subtitle) { %>
+      <p class="home__subtitle">
+        or: <%= post.subtitle %>
+      </p>
+      <% } %>
+      <% if (post.tags && post.tags.length){ %>
+        <%- list_tags(post.tags, {
+          show_count: false,
+          class: 'tag'
+        }) %>
+      <% } %>
+    </div>
+  </li>
+<% }) %>
+</ul>

@@ -1,0 +1,28 @@
+.tag-list
+  margin: line-height 0 0
+  &-item
+    display: inline
+    padding: 8px 0
+    font-size: 18px
+    height: 26px
+    border-color: white
+    border-style: solid
+    transform: skew(-10deg)
+    transition: transform 100ms
+    &:nth-child(3n+1)
+      background-color: color-primary
+    &:nth-child(3n+2)
+      background-color: color-link
+    &:nth-child(3n+3)
+      background-color: color-secondary
+    &:hover
+      transform: skew(0) scale(1.1)
+
+  &-link
+    padding: 0 6px
+    color: color-background
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+    &:before
+      content: "#"
