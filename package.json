@@ -23,7 +23,7 @@
     "lodash": "^4.11.2"
   },
   "devDependencies": {
-    "finalhandler": "^1.0.0",
+    "finalhandler": "^1.1.1",
     "glob": "^7.0.0",
     "markdown-to-ast": "^3.2.3",
     "request": "^2.69.0",
