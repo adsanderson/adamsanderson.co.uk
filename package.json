@@ -5,7 +5,7 @@
     "getInteresting": "node _scripts/getInterestingThings done && echo 'got Interesting'",
     "serve": "hexo server -p $PORT -i $IP",
     "test": "phantomjs _test/*.test.js",
-    "build": "hexo generate"
+    "build": "npm run getInteresting && hexo generate"
   },
   "hexo": {
     "version": "3.2.2"
